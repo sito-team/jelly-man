@@ -11,13 +11,14 @@ public class animation_script_bform : MonoBehaviour
     public string jumpbuttonname = "Jump";
     private float jumpcount = 0;
     public LayerMask layerMask;
+    public CharacterController player;
 
     public string horizontal = "Horizontal";
     public string vertical = "Vertical";
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.Find("Player").GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -32,25 +33,36 @@ public class animation_script_bform : MonoBehaviour
             anime.SetBool(animator_bool_corriendo, false);
         }
 
-        if (Input.GetButtonDown(jumpbuttonname))
+        if (player.isGrounded)
         {
-            jumpcount++;
-        }
+            anime.SetBool(animator_bool_salto, false);
 
-        if (Input.GetButtonDown(jumpbuttonname))
+        }
+        else
         {
             anime.SetBool(animator_bool_salto, true);
-            if(Input.GetButton(jumpbuttonname)&& jumpcount==2)
-            {
-                anime.SetBool(animator_bool_salto2, true);
-            }
-        }
-        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), 0.1f, layerMask))
-        {
-            
-            anime.SetBool(animator_bool_salto, false);
-            anime.SetBool(animator_bool_salto2, false);
-            jumpcount = 0;
         }
     }
+
+    // if (Input.GetButtonDown(jumpbuttonname))
+    //  {
+    //     jumpcount++;
+    // }
+
+    //  if (Input.GetButtonDown(jumpbuttonname))
+    //  {
+    //      anime.SetBool(animator_bool_salto, true);
+    //      if(Input.GetButton(jumpbuttonname)&& jumpcount==2)
+    //      {
+    //         anime.SetBool(animator_bool_salto2, true);
+    //      }
+    //  }
+    //   else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), 0.1f, layerMask))
+    //   {
+    //       
+    //     anime.SetBool(animator_bool_salto, false);
+    //      anime.SetBool(animator_bool_salto2, false);
+    //       jumpcount = 0;
+    //  }
+//}
 }

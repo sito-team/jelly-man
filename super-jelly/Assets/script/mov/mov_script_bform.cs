@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class mov_script_bform : MonoBehaviour
 {
+
+    public float horizontalMove;
+    public float verticalMove;
+    private Vector3 playerinput;
+    public CharacterController player;
+    public float playerSpeed;
+    private Vector3 moveplayer;
+    public Camera maincamera;
+
+    private Vector3  camFoward;
+    private Vector3 camRight;
+
+
+    /////////////////////////////////////////////
+   
     public string horizontal = "Horizontal";
     public string vertical = "Vertical";
     public string jumpbuttonname = "Jump";
@@ -21,13 +36,30 @@ public class mov_script_bform : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        horizontalMove = Input.GetAxis("Horizont");
+        verticalMove = Input.GetAxis("Vertical");
+
+        playerinput = new Vector3(horizontalMove, 0, verticalMove);
+        playerinput = Vector3.ClampMagnitude(playerinput, 1);
+        camDirection();
+
+        moveplayer = playerinput.x * camRight +playerinput.z * camFoward;
+        player.Move(moveplayer * playerSpeed * Time.deltaTime);
+
+
+
+
+
+
+
+
 
 
         if (doblejumpcomp == true)
@@ -48,8 +80,8 @@ public class mov_script_bform : MonoBehaviour
             doblejumpcomp = true;
         }
     
-        inputvector.x = Input.GetAxis(horizontal);
-        inputvector.z = Input.GetAxis(vertical);
+       // inputvector.x = Input.GetAxis(horizontal);
+      //  inputvector.z = Input.GetAxis(vertical);
     
         
         if (Input.GetButtonDown(jumpbuttonname)&&jump_test ) 
@@ -58,9 +90,21 @@ public class mov_script_bform : MonoBehaviour
             doblejumpcomp =false;
 
         }
+        
     }
+    void camDirection()
+    {
+        camFoward = maincamera.transform.forward;
+        camRight = maincamera.transform.right;
+        camFoward.y = 0;
+        camRight.y = 0;
+        camFoward = camFoward.normalized;
+        camRight = camRight.normalized;
+       
+    }
+
     private void FixedUpdate()
     {
-        capsulerigidbody.MovePosition(transform.position + inputvector * (movementspeed * Time.deltaTime));
+      //  capsulerigidbody.MovePosition(transform.position + inputvector * (movementspeed * Time.deltaTime));
     }
 }
