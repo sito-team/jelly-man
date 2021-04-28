@@ -660,7 +660,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744269396}
-  m_Mesh: {fileID: 1702638294}
+  m_Mesh: {fileID: 1323349893}
 --- !u!23 &744269399
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -910,7 +910,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
-  m_Mesh: {fileID: 1702638294}
+  m_Mesh: {fileID: 1323349893}
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1041,13 +1041,13 @@ MonoBehaviour:
   offset: {x: 6, y: 3, z: 0}
   sensibilidad: 3
   lerpvalue: 0.077
---- !u!43 &1702638294
+--- !u!43 &1323349893
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21374
+  m_Name: pb_Mesh25138
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
