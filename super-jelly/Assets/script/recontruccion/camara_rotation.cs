@@ -7,6 +7,8 @@ public class camara_rotation : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
     private Transform target;
+
+   
     [SerializeField]
     [Range(1.0f, 5.0f)]
     private float lookAtVerticalOffset;
@@ -26,16 +28,16 @@ public class camara_rotation : MonoBehaviour
     [Range(0.0f, 1.0f)]
     private float mouseSensitivityver = 1;
     [SerializeField]
-    [Range(0.0f, 5.0f)]
+    [Range(0.0f, 10.0f)]
     private float anglemax = 5;
     [SerializeField]
-    [Range(0.0f, 5.0f)]
+    [Range(0.0f, 10.0f)]
     private float anglemin = 0;
 
 
     private string mouseAxis = "Mouse X";
     private string mouseAxisy = "Mouse Y";
-   
+
 
     void LateUpdate()
     {
@@ -43,11 +45,11 @@ public class camara_rotation : MonoBehaviour
 
         if ((cameraVerticalOffset >= anglemax && Input.GetAxis(mouseAxisy) > 0) || (cameraVerticalOffset <= anglemin && Input.GetAxis(mouseAxisy) < 0))
         {
-            
+
         }
         else
         {
-            cameraVerticalOffset += Input.GetAxis(mouseAxisy)*mouseSensitivityver;
+            cameraVerticalOffset += Input.GetAxis(mouseAxisy) * mouseSensitivityver;
         }
 
 
@@ -65,13 +67,12 @@ public class camara_rotation : MonoBehaviour
 
         // else
 
-       // cameraVerticalOffset += verificationmax;
+        // cameraVerticalOffset += verificationmax;
 
 
 
 
         angle += Input.GetAxis(mouseAxis);
-
 
         transform.position = target.position +
 
@@ -80,5 +81,6 @@ public class camara_rotation : MonoBehaviour
                              Vector3.up * cameraVerticalOffset;
 
         transform.LookAt(target.position + lookAtVerticalOffset * Vector3.up);
-    }
+        }
 }
+

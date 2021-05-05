@@ -7,6 +7,7 @@ public class character_basic_move : MonoBehaviour
     public string horizontalAxis = "Horizontal";
     public string verticalAxis = "Vertical";
     public string jumpButtonName = "Jump";
+    public bool sonic;
     [SerializeField]
     [Range(1.0f, 20.0f)]
     public float movementSpeed = 2f;
@@ -21,6 +22,7 @@ public class character_basic_move : MonoBehaviour
     private Vector3 inputVector;
     [SerializeField]
     private Transform referenceCamera;
+    public LayerMask layerMask;
 
     void Update()
     {
@@ -32,15 +34,12 @@ public class character_basic_move : MonoBehaviour
 
         inputVector += Input.GetAxis(verticalAxis) * correctedCameraForward;
 
-        if (Input.GetButtonDown(jumpButtonName))
-        {
-            myRigidBody.AddForce(Vector3.up * jumpForce, jumpForceMode);
-        }
-
-      //  if (Input.GetButtonDown(attackButtonName))
-      // {
-      //      animator.SetTrigger(attackParameterName);
-      //  }
+        jump();
+          
+        //  if (Input.GetButtonDown(attackButtonName))
+        // {
+        //      animator.SetTrigger(attackParameterName);
+        //  }
     }
 
     private void FixedUpdate()
@@ -50,5 +49,17 @@ public class character_basic_move : MonoBehaviour
 
         myRigidBody.MovePosition(transform.position + inputVector * (movementSpeed * Time.deltaTime));
       //  animator.SetFloat(walkingSpeedParameterName, inputVector.magnitude);
+    }
+    public void jump()
+    {
+        if (Input.GetButtonDown(jumpButtonName) && sonic)
+        {
+            myRigidBody.AddForce(Vector3.up * jumpForce, jumpForceMode);
+            sonic = false;
+        }
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), 0.028f, layerMask))
+        {
+            sonic = true;
+        }
     }
 }
