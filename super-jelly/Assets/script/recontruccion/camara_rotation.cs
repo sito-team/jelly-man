@@ -68,6 +68,8 @@ public class camara_rotation : MonoBehaviour
        // cameraVerticalOffset += verificationmax;
 
 
+
+
         angle += Input.GetAxis(mouseAxis);
 
 
