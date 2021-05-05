@@ -15,9 +15,9 @@ public class changeecene : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.F))
-        SceneManager.LoadScene("testlvl");
+        SceneManager.LoadScene("testlvl - copia");
 
         if (Input.GetKeyDown(KeyCode.G))
-            SceneManager.LoadScene("testlvl - copia");
+            SceneManager.LoadScene("lvl1");
     }
 }

@@ -34,7 +34,7 @@ public class ControladorDelJugador : MonoBehaviour
         
         
 
-        Vector3 movimiento = new Vector3(0f , 0f, 0f) + correctedCameraForward;
+        Vector3 movimiento = referenceCamera.right*movimientoHorizontal + correctedCameraForward;
         rb.AddForce(movimiento  * velocidad);
     }
 

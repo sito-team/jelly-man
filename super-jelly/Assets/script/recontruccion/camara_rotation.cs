@@ -8,6 +8,8 @@ public class camara_rotation : MonoBehaviour
     [SerializeField]
     private Transform target;
 
+    
+
    
     [SerializeField]
     [Range(1.0f, 5.0f)]
@@ -82,5 +84,9 @@ public class camara_rotation : MonoBehaviour
 
         transform.LookAt(target.position + lookAtVerticalOffset * Vector3.up);
         }
+    public void funcionchangecharacter  (Transform camera_guide)
+    {
+        target = camera_guide;
+    }
 }
 
