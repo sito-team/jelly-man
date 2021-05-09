@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - key
+  - hud_shower
+  - player
+  - change_character_system
+  - ball
+  - normal
   layers:
   - Default
   - TransparentFX
@@ -14,7 +20,7 @@ TagManager:
   - 
   - 
   - wall
-  - 
+  - Player
   - 
   - 
   - 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class character_n_animation : MonoBehaviour
 {
     // Start is called before the first frame update
+    public feetcube feet;
     public Animator animator;
     public int jumpcount;
     public bool jumpa;
@@ -28,28 +29,19 @@ public class character_n_animation : MonoBehaviour
         }
 
 
-        if (Input.GetButtonDown(jumpButtonName))
+
+        if (feet.grounded)
         {
-         jumpcount++;
-        }
-
-             if (Input.GetButtonDown(jumpButtonName))
-              {
-                animator.SetBool("jump", true);
-              //    if(Input.GetButton(jumpButtonName) && jumpcount==2)  
-            //     {
-             //   animator.SetBool("jump2", true);
-            //      }
-              }
-               else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), 0.1f, layerMask))
-               {
-
             animator.SetBool("jump", false);
-         //   animator.SetBool("jump2", false);
-           //       jumpcount = 0;
+            
+           
+        }
+        else 
+        {
 
-            //habilitar codigo para doble salto
-             }
+            animator.SetBool("jump", true);
+
+        }
 
     }
 

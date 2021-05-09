@@ -2,28 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class changecaracter : MonoBehaviour 
+public class changecaracter : MonoBehaviour
 {
-    public KeyCode transformkey= KeyCode.H;
     public GameObject positiontransform;
 
-    public Vector3 offset;
     public camara_rotation camara_;
     // Start is called before the first frame update
-    void Start()
+    public GameObject[] form;
+    private bool[] comprobation = new bool[10];
+    public bool sonic;
+    public int actualformposition;
+
+    public void Update()
     {
+        for (int i = 0; i < form.Length; i++)
+        {
+           
+            comprobation[i] = form[i].gameObject.active;
+            
+            
+            if(comprobation[i])
+            {
+                actualformposition = i;
+            }
+        }
         
     }
-
     // Update is called once per frame
-    void Update()
+    public void changecomand( GameObject newtranformation, Vector3 offset)
     {
-        if (Input.GetKeyDown(transformkey))
-        {
-            positiontransform.transform.position = transform.position+offset;
-            positiontransform.SetActive(true);
-            camara_.funcionchangecharacter(positiontransform.transform);
-            gameObject.SetActive(false);
-        }
+
+        newtranformation.transform.position = form[actualformposition].gameObject.transform.position + offset;
+        newtranformation.SetActive(true);
+        camara_.funcionchangecharacter(newtranformation.transform);
+        form[actualformposition].gameObject.SetActive(false);
     }
 }
