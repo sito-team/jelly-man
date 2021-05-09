@@ -1,10 +1,11 @@
 ﻿
 using UnityEngine;
 
-public class collect_jelly_form_bal : collect_item
+public class collect_jelly_form : collect_item
 {
     public GameObject ball_character;
     private changecaracter character_change_trigger;
+    public Vector3 offset;
     private void Start()
     {
             
@@ -14,6 +15,6 @@ public class collect_jelly_form_bal : collect_item
     public override void thipeofitem()
     {
 
-        character_change_trigger.changecomand(ball_character, new Vector3(0,1,0));
+        character_change_trigger.changecomand(ball_character, offset);
     }
 }

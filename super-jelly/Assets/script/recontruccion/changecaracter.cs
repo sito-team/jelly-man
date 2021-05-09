@@ -31,10 +31,12 @@ public class changecaracter : MonoBehaviour
     // Update is called once per frame
     public void changecomand( GameObject newtranformation, Vector3 offset)
     {
-
+        if(newtranformation.gameObject!= form[actualformposition].gameObject)
+        { 
         newtranformation.transform.position = form[actualformposition].gameObject.transform.position + offset;
         newtranformation.SetActive(true);
         camara_.funcionchangecharacter(newtranformation.transform);
         form[actualformposition].gameObject.SetActive(false);
+        }
     }
 }
