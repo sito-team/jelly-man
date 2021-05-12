@@ -6,7 +6,6 @@ public class enemy : MonoBehaviour
 {
     [SerializeField]
     private GameObject spawnpoint;
-    int fix;
     private collectible_structure lifeless;
     private void Start()
     {
@@ -17,10 +16,11 @@ public class enemy : MonoBehaviour
     {
         if (player_collision_verifict.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            lifeless.takedamage(1);
+            
             player_collision_verifict.gameObject.transform.position = spawnpoint.transform.position;
-        
-           
+            lifeless.takedamage(1);
+
+
         }
     }
 }

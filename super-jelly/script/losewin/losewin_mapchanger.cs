@@ -12,5 +12,6 @@ public class losewin_mapchanger : MonoBehaviour
         if (Input.GetKeyDown(enter) || Input.GetKeyDown(enter2))
             SceneManager.LoadScene("intro");
 
+
     }
 }

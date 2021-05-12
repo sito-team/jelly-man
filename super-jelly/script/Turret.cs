@@ -9,6 +9,7 @@ public class Turret : MonoBehaviour
     private bool targetLocked;
     public GameObject bullet;
     public GameObject ShotSpawner;
+    
 
     public GameObject turret;
     public float fireTimer;

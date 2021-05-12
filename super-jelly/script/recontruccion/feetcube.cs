@@ -6,23 +6,29 @@ public class feetcube : MonoBehaviour
 {
     public bool grounded;
 
-    void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
-
-        grounded = true;
-       
+        if (other.tag != "wind")
+        {
+            grounded = true;
+        }
     }
 
-    void OnTriggerStay()
+
+    void OnTriggerStay(Collider other)
     {
-        grounded = true;
-       
+        if (other.tag != "wind")
+        {
+            grounded = true;
+        }
+
     }
 
-    void OnTriggerExit()
+    void OnTriggerExit(Collider other)
     {
-       
-            grounded = false;
-        
+
+        grounded = false;
+
+
     }
 }

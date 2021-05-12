@@ -15,13 +15,17 @@ public class enemy_follow_player : MonoBehaviour
     //States
     public float sightRange;
     public bool playerInSightRange;
+    public changecaracter camara_changecaracte;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        
+
     }
 
     private void Update()
     {
+        player = camara_changecaracte.player_form.transform;
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(player.transform.position, sightRange );
         
@@ -30,9 +34,9 @@ public class enemy_follow_player : MonoBehaviour
             ChasePlayer();
 
         }
-        else
+            if(playerInSightRange==false)
         { 
-            spider.SetBool("walk", true);
+            spider.SetBool("walk", false);
         }
 
     }

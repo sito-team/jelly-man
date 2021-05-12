@@ -226,10 +226,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1045380316536793917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9529f9d7cb832d64e8255e92ae68dc1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d35771841cb7c64189b2a067d0d9d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 9121007637600810022, guid: 67c96cd246ae02c4da20554f6af5e22b, type: 3}
+  bullet: {fileID: 7450562679814127890, guid: dc81de6fa725f0d419ecbf894e6bd490, type: 3}
   ShotSpawner: {fileID: 1045380315377514085}
-  turret: {fileID: 1045380316536793917}
-  fireTimer: 1
+  turret: {fileID: 1045380315188147160}
+  fireTimer: 3

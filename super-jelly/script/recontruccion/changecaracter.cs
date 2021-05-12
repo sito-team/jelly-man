@@ -10,8 +10,8 @@ public class changecaracter : MonoBehaviour
     // Start is called before the first frame update
     public GameObject[] form;
     private bool[] comprobation = new bool[10];
-    public bool sonic;
     public int actualformposition;
+    public GameObject player_form;
 
     public void Update()
     {
@@ -26,6 +26,7 @@ public class changecaracter : MonoBehaviour
                 actualformposition = i;
             }
         }
+        player_form=form[actualformposition].gameObject;
 
     }
     // Update is called once per frame

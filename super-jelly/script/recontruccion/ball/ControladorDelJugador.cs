@@ -38,10 +38,7 @@ public class ControladorDelJugador : MonoBehaviour
         rb.AddForce(movimiento  * velocidad);
     }
 
-    void OnTriggerEnter(Collider other)
-    {
 
-    }
 
   
 }
