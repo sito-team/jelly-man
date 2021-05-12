@@ -21,7 +21,7 @@ public class Turret : MonoBehaviour
     {
         
 
-        if(other.tag == "normal")
+        if(other.tag == "Player")
         {
             target = other.gameObject;
             targetLocked = true;
