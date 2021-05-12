@@ -26,9 +26,21 @@ public class character_basic_move : MonoBehaviour
     [SerializeField]
     private Transform referenceCamera;
     public LayerMask layerMask;
+    public bool planar;
+    public int planar_fly;
 
-    void Update()
+
+    public wind wind;
+    public bool wind_on;
+
+    public void Update()
     {
+        wind_on = wind.wind_on_si;
+
+        if (wind_on&&planar)
+        {
+            myRigidBody.AddForce(Vector3.up * planar_fly, jumpForceMode);
+        }
 
         inputVector = Input.GetAxis(horizontalAxis) * referenceCamera.right;
 
@@ -38,7 +50,7 @@ public class character_basic_move : MonoBehaviour
 
         inputVector += Input.GetAxis(verticalAxis) * correctedCameraForward;
 
-
+       
         jump();
 
     }

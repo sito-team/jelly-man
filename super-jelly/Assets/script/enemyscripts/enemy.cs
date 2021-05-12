@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
+    public float closeDistance = 5;
     [SerializeField]
     private GameObject spawnpoint;
     private collectible_structure lifeless;
     private void Start()
     {
         lifeless = GameObject.FindGameObjectWithTag("hud_shower").GetComponent<collectible_structure>();
+
     }
+
+
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision player_collision_verifict)
     {
@@ -23,5 +27,6 @@ public class enemy : MonoBehaviour
 
         }
     }
+
 }
 

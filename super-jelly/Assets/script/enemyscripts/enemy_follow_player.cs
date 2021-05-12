@@ -10,7 +10,8 @@ public class enemy_follow_player : MonoBehaviour
 
     public NavMeshAgent agent;
     public Animator spider;
-    public Transform player;
+    Vector3 destination;
+    private bool player_is_on;
 
     //States
     public float sightRange;
@@ -19,20 +20,53 @@ public class enemy_follow_player : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            destination = other.transform.position;
 
+            player_is_on = true;
+
+
+        }
+
+    }
+    private void OnTriggerStay(Collider other)
+    { 
+
+        if (other.tag == "Player")
+        {
+            destination = other.transform.position;
+
+            player_is_on = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            player_is_on = false;
+            agent.isStopped = true;
+            transform.LookAt(null);
+        }
+    }
     private void Update()
     {
         //Check for sight and attack range
-        playerInSightRange = Physics.CheckSphere(player.transform.position, sightRange );
         
-        if (playerInSightRange)
-        { 
+        
+        if (player_is_on)
+        {
+            
+            agent.ResetPath();
             ChasePlayer();
 
         }
         else
         { 
-            spider.SetBool("walk", true);
+            spider.SetBool("walk", false);
         }
 
     }
@@ -41,7 +75,7 @@ public class enemy_follow_player : MonoBehaviour
     private void ChasePlayer()
     {
         spider.SetBool("walk",true);
-        agent.SetDestination(player.position);
-        transform.LookAt(player.transform);
+        agent.SetDestination(destination);
+        transform.LookAt(destination);
     }
 }
