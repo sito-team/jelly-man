@@ -13,6 +13,7 @@ public class character_n_animation : MonoBehaviour
     public string jumpButtonName = "Jump";
     public string horizontal = "Horizontal";
     public string vertical = "Vertical";
+    public AudioSource audio;
     
 
     // Update is called once per frame
@@ -38,8 +39,9 @@ public class character_n_animation : MonoBehaviour
         }
         else 
         {
-
+            audio.Play();
             animator.SetBool("jump", true);
+            
 
         }
 
