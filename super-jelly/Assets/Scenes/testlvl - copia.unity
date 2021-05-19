@@ -80492,6 +80492,21 @@ PrefabInstance:
       propertyPath: happy
       value: 
       objectReference: {fileID: 888864240}
+    - target: {fileID: 228163533105006330, guid: 13481a384eccf8d46974f7ae66a62cc5,
+        type: 3}
+      propertyPath: b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 228163533105006330, guid: 13481a384eccf8d46974f7ae66a62cc5,
+        type: 3}
+      propertyPath: c
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 228163533105006330, guid: 13481a384eccf8d46974f7ae66a62cc5,
+        type: 3}
+      propertyPath: Time_to_rotate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 228163533105006334, guid: 13481a384eccf8d46974f7ae66a62cc5,
         type: 3}
       propertyPath: m_LocalPosition.x
