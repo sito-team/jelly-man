@@ -9,7 +9,7 @@ public class character_basic_move : MonoBehaviour
     public string horizontalAxis = "Horizontal";
     public string verticalAxis = "Vertical";
     public string jumpButtonName = "Jump";
-   
+
 
 
 
@@ -27,20 +27,19 @@ public class character_basic_move : MonoBehaviour
     private Transform referenceCamera;
     public LayerMask layerMask;
     public bool planar;
-    public int planar_fly;
+    public float vel_slow=1;
+   
 
 
-    public wind wind;
-    public bool wind_on;
+    public status_changer status;
+
 
     public void Update()
     {
-        wind_on = wind.wind_on_si;
 
-        if (wind_on&&planar)
-        {
-            myRigidBody.AddForce(Vector3.up * planar_fly, jumpForceMode);
-        }
+
+        
+    
 
         inputVector = Input.GetAxis(horizontalAxis) * referenceCamera.right;
 
@@ -49,8 +48,8 @@ public class character_basic_move : MonoBehaviour
         correctedCameraForward.Normalize();
 
         inputVector += Input.GetAxis(verticalAxis) * correctedCameraForward;
+        
 
-       
         jump();
 
     }
@@ -58,9 +57,14 @@ public class character_basic_move : MonoBehaviour
     private void FixedUpdate()
     {
         transform.LookAt(transform.position + inputVector);
-        myRigidBody.MovePosition(transform.position + inputVector * (movementSpeed * Time.deltaTime));
+        myRigidBody.MovePosition(transform.position + inputVector * (vel_slow*movementSpeed * Time.deltaTime));
     }
+    public void slowforce(float slowmo)
+    {
+        vel_slow = slowmo;
 
+
+    }
     public void jump()
     {
 
@@ -70,6 +74,13 @@ public class character_basic_move : MonoBehaviour
 
         }
     }
- 
+
+    public void wind(float force)
+    {
+        if(planar)
+        myRigidBody.AddForce(Vector3.up * force, jumpForceMode);
+
+
+    }
 }
 

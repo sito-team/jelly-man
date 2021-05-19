@@ -44,7 +44,7 @@ public class camara_rotation : MonoBehaviour
     void LateUpdate()
     {
         angle += Input.GetAxis(mouseAxis) * mouseSensitivity * Time.deltaTime;
-
+        
         if ((cameraVerticalOffset >= anglemax && Input.GetAxis(mouseAxisy) > 0) || (cameraVerticalOffset <= anglemin && Input.GetAxis(mouseAxisy) < 0))
         {
 
@@ -52,6 +52,7 @@ public class camara_rotation : MonoBehaviour
         else
         {
             cameraVerticalOffset +=  Input.GetAxis(mouseAxisy) * mouseSensitivityver;
+           
         }
 
 
@@ -87,6 +88,12 @@ public class camara_rotation : MonoBehaviour
     public void funcionchangecharacter  (Transform camera_guide)
     {
         target = camera_guide;
+    }
+    public void shake()
+    {
+        angle=Random.Range(angle-0.5f, angle+0.5f);
+        cameraVerticalOffset= Random.Range(cameraVerticalOffset - 0.3f, cameraVerticalOffset + 0.3f);
+
     }
 }
 

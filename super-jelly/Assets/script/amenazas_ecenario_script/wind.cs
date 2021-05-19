@@ -2,30 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class wind : MonoBehaviour
+public class wind : status_changer
 {
-    public bool wind_on_si;
+    [SerializeField]
+    [Range(0.0f, 20f)]
+    public float windforce=5;
+    
+
     // Start is called before the first frame update
-    private void OnTriggerEnter(Collider other)
+    public override void effect()
     {
-        if (other.tag == "Player")
-        {
-
-            wind_on_si = true;
-
-
-        }
-
+        
+        funcion.wind(windforce);
     }
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            wind_on_si = true;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        wind_on_si = false;
-    }
+ 
+
 }
