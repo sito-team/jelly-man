@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: 617597ffa02709542a5629de2b7ebd95
+guid: 97fde8f1b00e1384daed4fa31c95cd3f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5123265253063923073
+    second: ASDW.JELLY_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -84,11 +87,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ASDW.JELLY_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 870
+        width: 707
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae5a753dd9ee1a498a782353e80fa79
+      internalID: -5123265253063923073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 424c9d77d633ede4fb1ea6227e73f288
     internalID: 0
     vertices: []
     indices: 
