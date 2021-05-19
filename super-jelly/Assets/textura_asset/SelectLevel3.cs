@@ -14,6 +14,6 @@ public class SelectLevel3 : MonoBehaviour
     // Update is called once per frame
     public void empezarjuego()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +6);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 }

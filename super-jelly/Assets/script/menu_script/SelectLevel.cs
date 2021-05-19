@@ -18,11 +18,15 @@ public class SelectLevel : MonoBehaviour
     }
     public void Level1()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
     public void Level2()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+    }
+    public void objetos()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
     }
     public void mainmenu()
     {

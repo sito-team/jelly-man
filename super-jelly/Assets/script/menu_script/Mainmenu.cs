@@ -18,7 +18,7 @@ public class Mainmenu : MonoBehaviour
     }
     public void empezarjuego()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 6);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
     public void cerrarjuego()
     {
