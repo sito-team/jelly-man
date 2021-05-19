@@ -21,12 +21,21 @@ public class Turret : MonoBehaviour
     {
         
 
-        if(other.tag == "Player")
+        if(other.gameObject.tag == "Player")
         {
             target = other.gameObject;
             targetLocked = true;
         }
     }
+    private void OnCollisionStay(Collision other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+
+            targetLocked = true;
+        }
+    }
+ 
     void  OnTriggerExit(Collider other)
     {
         targetLocked = false;
