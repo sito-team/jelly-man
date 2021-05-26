@@ -24,6 +24,7 @@ public class enemy_follow_player : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            
             destination = other.transform.position;
 
             player_is_on = true;
@@ -76,6 +77,6 @@ public class enemy_follow_player : MonoBehaviour
     {
         spider.SetBool("walk",true);
         agent.SetDestination(destination);
-        transform.LookAt(destination);
+        transform.LookAt(new Vector3(destination.x, transform.position.y , destination.z));
     }
 }

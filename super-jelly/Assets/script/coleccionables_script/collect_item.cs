@@ -6,7 +6,7 @@ public class  collect_item : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private void OnCollisionEnter(Collision player_collision_verifict)
+    virtual public void OnCollisionEnter(Collision player_collision_verifict)
     {
         if(player_collision_verifict.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
         {

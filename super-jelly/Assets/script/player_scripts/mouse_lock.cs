@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class mouse_lock : MonoBehaviour
 {
+    public bool cursorlock_bool;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        mouselock(cursorlock_bool);
     }
-
-    // Update is called once per frame
-    void Update()
+    public void mouselock(bool cursorlocked)
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+    
+        if(cursorlocked) {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+            
+        } else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            
+        }
     }
 }

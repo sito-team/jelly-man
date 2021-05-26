@@ -8,9 +8,9 @@ public class camara_rotation : MonoBehaviour
     [SerializeField]
     private Transform target;
 
-    
 
-   
+
+
     [SerializeField]
     [Range(1.0f, 5.0f)]
     private float lookAtVerticalOffset;
@@ -37,45 +37,49 @@ public class camara_rotation : MonoBehaviour
     private float anglemin = 0;
 
 
+    float yes;
+    public Transform Target, Player;
+
+    public Transform Obstruction;
+    public Transform si;
+    public GameObject[] hidenobjects;
+
+
+
+
     private string mouseAxis = "Mouse X";
     private string mouseAxisy = "Mouse Y";
 
-
-    void LateUpdate()
+    private void Start()
     {
-        angle += Input.GetAxis(mouseAxis) * mouseSensitivity * Time.deltaTime;
-        
-        if ((cameraVerticalOffset >= anglemax && Input.GetAxis(mouseAxisy) > 0) || (cameraVerticalOffset <= anglemin && Input.GetAxis(mouseAxisy) < 0))
+        yes = cameraDistanceOffset;
+        si = Obstruction;
+
+    }
+
+    void Update()
+    {
+        Vector3 fwd = transform.TransformDirection(-Vector3.forward);
+
+        ViewObstructed();
+
+
+        angle += (Input.GetAxis(mouseAxis) * -1) * mouseSensitivity * Time.deltaTime;
+
+        if ((cameraVerticalOffset >= anglemax && (Input.GetAxis(mouseAxisy) * -1) > 0) || (cameraVerticalOffset <= anglemin && (Input.GetAxis(mouseAxisy) * -1) < 0))
         {
 
         }
         else
         {
-            cameraVerticalOffset +=  Input.GetAxis(mouseAxisy) * mouseSensitivityver;
-           
+            cameraVerticalOffset += (Input.GetAxis(mouseAxisy) * -1) * mouseSensitivityver;
+
         }
 
 
-        // if (cameraVerticalOffset > anglemax && Input.GetAxis(mouseAxisy) > 0)
-        // {
-
-        //    verificationmax = 0;
-        // }
-
-        //if (cameraVerticalOffset < anglemax && Input.GetAxis(mouseAxisy) < 0)
-        // { 
-
-        //     verificationmax = 0;
-        //}
-
-        // else
-
-        // cameraVerticalOffset += verificationmax;
 
 
-
-
-        angle += Input.GetAxis(mouseAxis);
+        angle += (Input.GetAxis(mouseAxis) * -1);
 
         transform.position = target.position +
 
@@ -84,15 +88,39 @@ public class camara_rotation : MonoBehaviour
                              Vector3.up * cameraVerticalOffset;
 
         transform.LookAt(target.position + lookAtVerticalOffset * Vector3.up);
-        }
-    public void funcionchangecharacter  (Transform camera_guide)
+    }
+    public void funcionchangecharacter(Transform camera_guide)
     {
         target = camera_guide;
     }
     public void shake()
     {
-        angle=Random.Range(angle-0.5f, angle+0.5f);
-        cameraVerticalOffset= Random.Range(cameraVerticalOffset - 0.3f, cameraVerticalOffset + 0.3f);
+        angle = Random.Range(angle - 0.5f, angle + 0.5f);
+        cameraVerticalOffset = Random.Range(cameraVerticalOffset - 0.3f, cameraVerticalOffset + 0.3f);
+
+    }
+    void ViewObstructed()
+    {
+        RaycastHit hit;
+
+           
+        if (Physics.Raycast(transform.position, Target.position - transform.position, out hit, 9f))
+        {
+            Obstruction.gameObject.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
+            if (hit.collider.gameObject.tag != "Player" && hit.collider.gameObject.tag == "wall")
+            {
+
+                Obstruction = hit.transform;
+                Obstruction.gameObject.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly;
+
+
+            }
+            else
+            {
+                Obstruction.gameObject.GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
+
+            }
+        }
 
     }
 }
