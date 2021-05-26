@@ -7,8 +7,9 @@ public class enemy : MonoBehaviour
     public float closeDistance = 5;
     [SerializeField]
    
-    private collectible_structure lifeless;
+    public collectible_structure lifeless;
     private GameObject si;
+    public bool espisable;
     private void Start()
     {
         
@@ -18,24 +19,19 @@ public class enemy : MonoBehaviour
 
 
     // Start is called before the first frame update
-    private void OnCollisionEnter(Collision player_collision_verifict)
+    public virtual void OnCollisionEnter(Collision player_collision_verifict)
     {
-        if (player_collision_verifict.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+       if(player_collision_verifict.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            
-
-
             player_collision_verifict.gameObject.transform.position = FindClosestEnemy().transform.position;
-            
+
             lifeless.takedamage(1);
-
-
         }
     }
 
     
     
-    GameObject FindClosestEnemy()
+    public GameObject FindClosestEnemy()
     {
         GameObject[] gos;
         gos = GameObject.FindGameObjectsWithTag("Respawn");
@@ -54,6 +50,7 @@ public class enemy : MonoBehaviour
         }
         return closest;
     }
+
 
 
 }

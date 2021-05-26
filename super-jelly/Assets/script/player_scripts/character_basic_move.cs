@@ -17,7 +17,7 @@ public class character_basic_move : MonoBehaviour
     [Range(1.0f, 20.0f)]
     public float movementSpeed = 2f;
     [SerializeField]
-    [Range(1.0f, 30000.0f)]
+    [Range(1.0f, 100f)]
     public float jumpForce = 10f;
     public ForceMode jumpForceMode = ForceMode.Impulse;
     public Rigidbody myRigidBody;
@@ -27,8 +27,10 @@ public class character_basic_move : MonoBehaviour
     private Transform referenceCamera;
     public LayerMask layerMask;
     public bool planar;
-    public float vel_slow=1;
-   
+    public float vel_slow = 1;
+    [SerializeField]
+    [Range(1.0f, 100f)]
+    public float falsagravedad;
 
 
     public status_changer status;
@@ -38,8 +40,7 @@ public class character_basic_move : MonoBehaviour
     {
 
 
-        
-    
+
 
         inputVector = Input.GetAxis(horizontalAxis) * referenceCamera.right;
 
@@ -48,7 +49,12 @@ public class character_basic_move : MonoBehaviour
         correctedCameraForward.Normalize();
 
         inputVector += Input.GetAxis(verticalAxis) * correctedCameraForward;
-        
+
+        if (!feet.grounded)
+        {
+            myRigidBody.AddForce(Vector3.down * falsagravedad, ForceMode.Force);
+        }
+       
 
         jump();
 

@@ -6,22 +6,23 @@ public class feetcube : MonoBehaviour
 {
     public bool grounded;
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
-
+        if(other.gameObject.layer == LayerMask.NameToLayer("floor"))
         grounded = true;
        
     }
 
-    void OnTriggerStay()
+    void OnTriggerStay(Collider other)
     {
-        grounded = true;
+        if (other.gameObject.layer == LayerMask.NameToLayer("floor"))
+            grounded = true;
        
     }
 
-    void OnTriggerExit()
+    void OnTriggerExit(Collider other)
     {
-       
+        if (other.gameObject.layer == LayerMask.NameToLayer("floor"))
             grounded = false;
         
     }
