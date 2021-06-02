@@ -6,21 +6,34 @@ public class Mostardaño : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject cosa;
+    public float timer;
     void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    public void OnCollisionEnter(Collision collision)
     {
-        if (Input.GetKey(KeyCode.P))
+        if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Jose");
             cosa.SetActive(true);
+            StartCoroutine("Damague");
         }
-        else
-        {
-            cosa.SetActive(false);
-        }
+
+
+
+    }
+
+    public void joselui()
+    {
+        cosa.SetActive(false);
+    }
+
+    IEnumerator Damague()
+    {
+        yield return new WaitForSeconds(timer);
+        joselui();
     }
 }

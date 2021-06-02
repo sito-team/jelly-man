@@ -789,6 +789,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: 6ee1f29300f8be14c87cf49e8a9585f0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 6ee1f29300f8be14c87cf49e8a9585f0, type: 3}
       propertyPath: m_Name
       value: OfficeChair_1
@@ -12864,7 +12868,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh127212
+  m_Name: pb_Mesh269986
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13666,7 +13670,7 @@ PrefabInstance:
     - target: {fileID: 2128941295402295872, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 555.18243
+      value: 555.1824
       objectReference: {fileID: 0}
     - target: {fileID: 2128941295402295872, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
@@ -13691,7 +13695,7 @@ PrefabInstance:
     - target: {fileID: 2128941295852285077, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 430.0926
+      value: 430.09253
       objectReference: {fileID: 0}
     - target: {fileID: 2128941295852285077, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
@@ -13858,6 +13862,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 2128941296277621199, guid: dbd1c717f4b6462419de916de0594bb0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2128941296492269064, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -13976,7 +13985,7 @@ PrefabInstance:
     - target: {fileID: 2128941297001261586, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 178.3504
+      value: 178.35034
       objectReference: {fileID: 0}
     - target: {fileID: 2128941297001261586, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
@@ -14001,7 +14010,7 @@ PrefabInstance:
     - target: {fileID: 2128941297053138624, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 49.000122
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 2128941297053138624, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
@@ -14026,7 +14035,7 @@ PrefabInstance:
     - target: {fileID: 2128941297059559393, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 302.98248
+      value: 302.98242
       objectReference: {fileID: 0}
     - target: {fileID: 2128941297059559393, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}

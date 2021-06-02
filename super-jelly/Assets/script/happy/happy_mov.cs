@@ -13,6 +13,9 @@ public class happy_mov : MonoBehaviour
     public float c;
     private bool lado;
     Vector3 destination;
+    [Range(0.1f, 1.0f)]
+    public float vel = 1;
+    
 
     public float Time_to_rotate;
     private float x;
@@ -56,7 +59,7 @@ public class happy_mov : MonoBehaviour
         if (lado == false)
         {
             x += Time.deltaTime;
-            transform.position = transform.position + new Vector3(a * Time.deltaTime, b * Time.deltaTime, c * Time.deltaTime);
+            transform.position = transform.position + new Vector3(a * Time.deltaTime*vel, b * Time.deltaTime*vel, c * Time.deltaTime*vel);
             if (x >= Time_to_rotate)
             {
 
@@ -68,7 +71,7 @@ public class happy_mov : MonoBehaviour
         if (lado)
         {
             x += Time.deltaTime;
-            transform.position = transform.position + new Vector3(-a * Time.deltaTime, -b * Time.deltaTime, -c * Time.deltaTime);
+            transform.position = transform.position + new Vector3(-a * Time.deltaTime*vel, -b * Time.deltaTime*vel, -c * Time.deltaTime*vel);
             if (x >= Time_to_rotate)
             {
                 lado = false;
