@@ -47,7 +47,7 @@ public class MenuButton : MonoBehaviour
         }
         if (menuButtonCOntroller.index==0)
         {
-            if (Input.GetKeyUp(KeyCode.P))
+            if (Input.GetKeyUp(KeyCode.Return))
             {
                 Lvls();
             }
@@ -55,7 +55,7 @@ public class MenuButton : MonoBehaviour
         }
         else if(menuButtonCOntroller.index==1 )
         {
-            if (Input.GetKeyUp(KeyCode.P))
+            if (Input.GetKeyUp(KeyCode.Return))
             {
                 Options();
                 
@@ -65,7 +65,7 @@ public class MenuButton : MonoBehaviour
         }
         else if(menuButtonCOntroller.index==2 )
         {
-            if (Input.GetKeyUp(KeyCode.P))
+            if (Input.GetKeyUp(KeyCode.Return))
             {
                 Quit();
             } 

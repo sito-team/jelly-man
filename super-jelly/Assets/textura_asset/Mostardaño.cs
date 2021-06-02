@@ -25,6 +25,15 @@ public class Mostardaño : MonoBehaviour
 
 
     }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Jose");
+            cosa.SetActive(true);
+            StartCoroutine("Damague");
+        }
+    }
 
     public void joselui()
     {

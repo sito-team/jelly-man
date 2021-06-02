@@ -50,16 +50,16 @@ public class MenuButton2 : MonoBehaviour
         }
         if (menuButtonCOntroller.index == 0)
         {
-            Debug.Log("Ando4");
+            
 
             
             {
 
             
-                if (Input.GetKeyUp(KeyCode.P))
+                if (Input.GetKeyUp(KeyCode.Return))
                 {
 
-                    Debug.Log("Ando");
+                   
                     MusicOff();
                     
                 }
@@ -75,7 +75,7 @@ public class MenuButton2 : MonoBehaviour
         if (menuButtonCOntroller.index == 1)
         {
 
-            if (Input.GetKeyUp(KeyCode.P))
+            if (Input.GetKeyUp(KeyCode.Return))
             {
                 EffectsOff();
             }
@@ -83,12 +83,12 @@ public class MenuButton2 : MonoBehaviour
         }
         if (menuButtonCOntroller.index == 2)
         {
-            if (Input.GetKeyUp(KeyCode.P))
+            if (Input.GetKeyUp(KeyCode.Return))
             {
                 Back();
             }
         }
-        Debug.Log("Jose");
+        
     }
         public void MusicOn()
         {

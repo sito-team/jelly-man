@@ -55,7 +55,7 @@ public class MenuButton4 : MonoBehaviour
         }
         if (menuButtonCOntroller.index == 0)
         {
-            Debug.Log("Ando4");
+           
 
 
             {
@@ -64,7 +64,7 @@ public class MenuButton4 : MonoBehaviour
                 if (Input.GetKeyUp(KeyCode.P))
                 {
 
-                    Debug.Log("Ando");
+                    
                     
 
                 }
@@ -75,7 +75,7 @@ public class MenuButton4 : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.P))
             {
 
-                Debug.Log("Ando");
+               
                 
 
             }

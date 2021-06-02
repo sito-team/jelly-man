@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1510071459083771603}
   - component: {fileID: 1510071459083771600}
   - component: {fileID: 1510071459083771601}
+  - component: {fileID: 48934947331048226}
   m_Layer: 0
   m_Name: moco_damage
   m_TagString: Untagged
@@ -106,7 +107,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f286f3e16618e424f8893bfe54c9b0fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnpoint: {fileID: 0}
+  closeDistance: 5
+  lifeless: {fileID: 0}
+  espisable: 0
+--- !u!114 &48934947331048226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510071459083771598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cosa: {fileID: 0}
+  timer: 0
 --- !u!1 &1510071459565499581
 GameObject:
   m_ObjectHideFlags: 0

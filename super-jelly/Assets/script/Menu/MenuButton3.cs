@@ -52,16 +52,16 @@ public class MenuButton3 : MonoBehaviour
         }
         if (menuButtonCOntroller.index == 0)
         {
-            Debug.Log("Ando4");
+           
 
 
             {
 
 
-                if (Input.GetKeyUp(KeyCode.P))
+                if (Input.GetKeyUp(KeyCode.Return))
                 {
 
-                    Debug.Log("Ando");
+                    
                     MusicOn();
 
                 }
@@ -69,10 +69,10 @@ public class MenuButton3 : MonoBehaviour
         }
         if (menuButtonCOntroller.index == 1)
         {
-            if (Input.GetKeyUp(KeyCode.P))
+            if (Input.GetKeyUp(KeyCode.Return))
             {
 
-                Debug.Log("Ando");
+               
                 EffectsOn();
 
             }
