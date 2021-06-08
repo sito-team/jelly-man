@@ -10,6 +10,8 @@ TagManager:
   - normal
   - change_character_system
   - wall
+  - waypoint
+  - box
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - 
   - Player
   - floor
-  - 
+  - boxcollidersistem
   - 
   - 
   - 

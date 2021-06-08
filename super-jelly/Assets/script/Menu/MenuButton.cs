@@ -103,4 +103,12 @@ public class MenuButton : MonoBehaviour
     {
         clip.Play();
     }
+    private void OnMouseEnter()
+    {
+        cursorchange.instance.onpoint();
+    }
+    private void OnMouseExit()
+    {
+        cursorchange.instance.deactivate();
+    }
 }

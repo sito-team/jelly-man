@@ -37,6 +37,7 @@ public class MenuButton4 : MonoBehaviour
     {
         if (menuButtonCOntroller.index == thisIndex)
         {
+
             animator.SetBool("Selected", true);
             if (Input.GetAxis("Submit") == 1)
             {
