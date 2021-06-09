@@ -7,24 +7,36 @@ public class PauseMenu : MonoBehaviour
 {
     public AudioSource Clip;
     public GameObject PausePanel;
+   
+    
 
+    public void Start()
+    {
+       
+
+    }
     public void Update()
     {
-        if (Input.GetKeyUp(KeyCode.P))
-        {
-            Pausemenu();
-        }
+        
+         if (Input.GetKeyUp(KeyCode.P))
+         {
+                Pausemenu();
+
+         }
+        
     }
     public void Pausemenu()
     {
         Time.timeScale = 0;
         PausePanel.SetActive(true);
-
+        
+       
     }
     public void Return()
     {
         Time.timeScale = 1;
         PausePanel.SetActive(false);
+       
     }
 
     public void BackMainMenu()

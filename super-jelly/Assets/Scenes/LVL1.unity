@@ -4297,7 +4297,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 442763929}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -5003,7 +5003,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 442763929}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -6659,6 +6659,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &442763929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4121916653627809849, guid: dbd1c717f4b6462419de916de0594bb0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1782680592}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &446435430 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 138360, guid: 5ac3edd53f963024ebc36254c7e55dee,
@@ -7393,6 +7399,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: timer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: cosa
+      value: 
+      objectReference: {fileID: 442763929}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -16102,7 +16118,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 442763929}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -22185,6 +22201,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: timer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: cosa
+      value: 
+      objectReference: {fileID: 442763929}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -23298,7 +23324,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 442763929}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -25851,7 +25877,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 442763929}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -26948,7 +26974,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 442763929}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -29895,7 +29921,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 442763929}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -33634,7 +33660,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 442763929}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer

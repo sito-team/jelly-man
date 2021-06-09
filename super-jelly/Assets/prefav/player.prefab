@@ -1667,7 +1667,6 @@ MonoBehaviour:
   horizontalAxis: Horizontal
   verticalAxis: Vertical
   jumpButtonName: Jump
-  particulas: {fileID: 0}
   movementSpeed: 6
   jumpForce: 1
   jumpForceMode: 1
@@ -2498,7 +2497,6 @@ MonoBehaviour:
   horizontalAxis: Horizontal
   verticalAxis: Vertical
   jumpButtonName: Jump
-  particulas: {fileID: 8902086216240828030}
   movementSpeed: 7.7
   jumpForce: 7
   jumpForceMode: 1
@@ -3236,6 +3234,20 @@ MonoBehaviour:
   verticalAxis: Vertical
   camera: {fileID: 0}
   shaketime: 0.2
+--- !u!114 &605622222611429249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8902086216240828028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d9862a66730f044690abab76566aa7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparks: {fileID: 8902086216240828030}
+  groundedP: 0
 --- !u!1001 &6612748521859534159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3313,6 +3325,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.47647858
       objectReference: {fileID: 0}
+    - target: {fileID: 2328259307835147057, guid: 934acc453eba8da4dbce38eaab3a030f,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2328259307835147059, guid: 934acc453eba8da4dbce38eaab3a030f,
         type: 3}
       propertyPath: m_Name
@@ -3330,6 +3347,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 934acc453eba8da4dbce38eaab3a030f, type: 3}
+--- !u!1 &8902086216240828028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2328259307835147059, guid: 934acc453eba8da4dbce38eaab3a030f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6612748521859534159}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8902086216240828031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2328259307835147056, guid: 934acc453eba8da4dbce38eaab3a030f,

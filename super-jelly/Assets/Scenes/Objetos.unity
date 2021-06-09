@@ -511,7 +511,7 @@ PrefabInstance:
     - target: {fileID: 106788192499108859, guid: b337cb8af6edde84988f4f515f87b7e5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 106788192499108859, guid: b337cb8af6edde84988f4f515f87b7e5,
         type: 3}
@@ -605,6 +605,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 106788192499108856, guid: b337cb8af6edde84988f4f515f87b7e5,
     type: 3}
   m_PrefabInstance: {fileID: 110780526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &119848710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8902086216240828028, guid: 074c2ed36bffb054fad6888d558aaffc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1039160078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &119848712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119848710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d9862a66730f044690abab76566aa7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparks: {fileID: 119848716}
+  groundedP: 0
+--- !u!198 &119848716 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8902086216240828030, guid: 074c2ed36bffb054fad6888d558aaffc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1039160078}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &139098955
 PrefabInstance:
@@ -2755,6 +2781,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 605622222611429249, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042544208520042661, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042544208520042661, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.12225083
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042544208520042661, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.0064701033
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042544208520042661, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.07058077
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042544208520042661, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.14078924
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042544208520042661, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.00400645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042544208520042661, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.15356347
+      objectReference: {fileID: 0}
     - target: {fileID: 2370869141066385812, guid: 074c2ed36bffb054fad6888d558aaffc,
         type: 3}
       propertyPath: cursorlock_bool
@@ -2849,6 +2915,16 @@ PrefabInstance:
         type: 3}
       propertyPath: playOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8902086216240828030, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8902086216240828030, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9159197765836189728, guid: 074c2ed36bffb054fad6888d558aaffc,
         type: 3}
@@ -10964,7 +11040,7 @@ PrefabInstance:
     - target: {fileID: 4786871884337702099, guid: 962a8a4de0b88cf48b8ed565dd4e1150,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4786871884337702099, guid: 962a8a4de0b88cf48b8ed565dd4e1150,
         type: 3}
