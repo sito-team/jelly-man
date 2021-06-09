@@ -1390,6 +1390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 431935954}
   - component: {fileID: 431935953}
+  - component: {fileID: 431935955}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -1425,6 +1426,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &431935955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431935952}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e49ee699b35d7c14491b81ed34829cca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorlock_bool: 0
 --- !u!1001 &443797899
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2741,6 +2755,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2370869141066385812, guid: 074c2ed36bffb054fad6888d558aaffc,
+        type: 3}
+      propertyPath: cursorlock_bool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2370869141066385813, guid: 074c2ed36bffb054fad6888d558aaffc,
         type: 3}
       propertyPath: camara_
@@ -10409,7 +10428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cosa: {fileID: 1389624031}
-  timer: 0
+  timer: 1
 --- !u!65 &1997382994
 BoxCollider:
   m_ObjectHideFlags: 0
