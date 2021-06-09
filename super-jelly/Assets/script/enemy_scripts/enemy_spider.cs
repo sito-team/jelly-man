@@ -52,6 +52,7 @@ public class enemy_spider : MonoBehaviour
 
 
     }
+    
     public GameObject FindClosestEnemy()
     {
         GameObject[] gos;
