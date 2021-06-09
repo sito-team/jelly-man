@@ -7,12 +7,12 @@ public class PauseMenu : MonoBehaviour
 {
     public AudioSource Clip;
     public GameObject PausePanel;
-   
-    
+    public bool cursorlock_bool;
+
 
     public void Start()
     {
-       
+        mouselock(cursorlock_bool);
 
     }
     public void Update()
@@ -21,7 +21,7 @@ public class PauseMenu : MonoBehaviour
          if (Input.GetKeyUp(KeyCode.P))
          {
                 Pausemenu();
-
+               
          }
         
     }
@@ -29,6 +29,8 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 0;
         PausePanel.SetActive(true);
+        mouselock(false);
+        
         
        
     }
@@ -47,5 +49,22 @@ public class PauseMenu : MonoBehaviour
     public void PlaySound()
     {
         Clip.Play();
+    }
+    public void mouselock(bool cursorlocked)
+    {
+
+        if (cursorlocked)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+
+
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+        }
     }
 }
