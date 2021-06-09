@@ -24,6 +24,20 @@ public class cursorchange : MonoBehaviour
     }
     public void onpoint()
     {
+        
+        StartCoroutine(wait(0.5f));
+    }
+    IEnumerator wait(float regeneration)
+    {
+
+       
         Cursor.SetCursor(onclick, Vector2.zero, CursorMode.Auto);
+
+        yield return new WaitForSeconds(regeneration);
+       
+        Cursor.SetCursor(normal, Vector2.zero, CursorMode.Auto);
+
+
+
     }
 }

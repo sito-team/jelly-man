@@ -83,7 +83,7 @@ public class MenusFuctions : MonoBehaviour
     }
     public void Lvl1()
     {
-        SceneManager.LoadScene("LVL1");
+        SceneManager.LoadScene("cinema1");
     }
     public void Lvl2()
     {
@@ -96,5 +96,9 @@ public class MenusFuctions : MonoBehaviour
     public void ArtScene()
     {
         SceneManager.LoadScene("Objetos");
+    }
+    public void Credits()
+    {
+        SceneManager.LoadScene("creditos");
     }
 }

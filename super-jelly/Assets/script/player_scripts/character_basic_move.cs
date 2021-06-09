@@ -9,7 +9,7 @@ public class character_basic_move : MonoBehaviour
     public string horizontalAxis = "Horizontal";
     public string verticalAxis = "Vertical";
     public string jumpButtonName = "Jump";
-
+   
 
 
 
@@ -35,6 +35,8 @@ public class character_basic_move : MonoBehaviour
 
     public status_changer status;
 
+    
+  
 
     public void Update()
     {
@@ -77,7 +79,7 @@ public class character_basic_move : MonoBehaviour
         if (Input.GetButtonDown(jumpButtonName) && feet.grounded)
         {
             myRigidBody.AddForce(Vector3.up * jumpForce, jumpForceMode);
-
+            
         }
     }
 
@@ -88,5 +90,6 @@ public class character_basic_move : MonoBehaviour
 
 
     }
+  
 }
 
