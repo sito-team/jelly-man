@@ -30,7 +30,7 @@ PrefabInstance:
     - target: {fileID: 6842643696322754353, guid: 12b0fd8ae39a5fc4b8f36c71de663544,
         type: 3}
       propertyPath: m_Name
-      value: Particula de salto
+      value: Particula de salto Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6842643696322754354, guid: 12b0fd8ae39a5fc4b8f36c71de663544,
         type: 3}
@@ -262,5 +262,26 @@ PrefabInstance:
       propertyPath: InitialModule.startLifetime.minScalar
       value: 0.2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6842643696322754355, guid: 12b0fd8ae39a5fc4b8f36c71de663544,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842643696322754355, guid: 12b0fd8ae39a5fc4b8f36c71de663544,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842643696322754355, guid: 12b0fd8ae39a5fc4b8f36c71de663544,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842643696322754355, guid: 12b0fd8ae39a5fc4b8f36c71de663544,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6642487517090268171, guid: 12b0fd8ae39a5fc4b8f36c71de663544, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 12b0fd8ae39a5fc4b8f36c71de663544, type: 3}

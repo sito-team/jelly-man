@@ -9,6 +9,7 @@ public class character_basic_move : MonoBehaviour
     public string horizontalAxis = "Horizontal";
     public string verticalAxis = "Vertical";
     public string jumpButtonName = "Jump";
+    public ParticleSystem UpSP;
    
 
 
@@ -79,7 +80,7 @@ public class character_basic_move : MonoBehaviour
         if (Input.GetButtonDown(jumpButtonName) && feet.grounded)
         {
             myRigidBody.AddForce(Vector3.up * jumpForce, jumpForceMode);
-            
+            CreateUpSP();
         }
     }
 
@@ -89,6 +90,10 @@ public class character_basic_move : MonoBehaviour
         myRigidBody.AddForce(Vector3.up * force, jumpForceMode);
 
 
+    }
+    void CreateUpSP()
+    {
+        UpSP.Play();
     }
   
 }

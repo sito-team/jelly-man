@@ -17,7 +17,7 @@ public class Mostardaño : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Jose");
+           
             cosa.SetActive(true);
             StartCoroutine("Damague");
         }
@@ -27,9 +27,18 @@ public class Mostardaño : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+
+        if (other.gameObject.layer == LayerMask.NameToLayer("Player") && other.gameObject.name == "Personaje_Pelota")
         {
-            Debug.Log("Jose");
+
+
+            return;
+
+
+        }
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            
             cosa.SetActive(true);
             StartCoroutine("Damague");
         }
