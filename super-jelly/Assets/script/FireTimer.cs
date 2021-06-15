@@ -11,38 +11,22 @@ public class FireTimer : MonoBehaviour
     public GameObject Fire2;
     public GameObject Fire3;
     public GameObject Fire4;
+    public bool State;
     // Start is called before the first frame update
-    void Start()
-    {
-        Fire.gameObject.SetActive(true);
-        Fire2.gameObject.SetActive(true);
-        Fire3.gameObject.SetActive(true);
-        Fire4.gameObject.SetActive(true);
-
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         Timer++;
         if (Timer>=500)
         {
-            timerreactivation++;
+            Timer = 0;
+            State = !State;
             
-            Fire.gameObject.SetActive(false);
-            Fire2.gameObject.SetActive(false);
-            Fire3.gameObject.SetActive(false);
-            Fire4.gameObject.SetActive(false);
-           if (timerreactivation >= 500)
-            {
-                Fire.gameObject.SetActive(true);
-                Fire2.gameObject.SetActive(true);
-                Fire3.gameObject.SetActive(true);
-                Fire4.gameObject.SetActive(true);
-                Timer = 0;
-                timerreactivation = 500;
-                return;
-            } 
+            Fire.gameObject.SetActive(State);
+            Fire2.gameObject.SetActive(State);
+            Fire3.gameObject.SetActive(State);
+            Fire4.gameObject.SetActive(State);
+      
         }
         
     }
