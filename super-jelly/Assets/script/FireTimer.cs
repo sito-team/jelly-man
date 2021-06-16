@@ -17,7 +17,7 @@ public class FireTimer : MonoBehaviour
     void Update()
     {
         Timer++;
-        if (Timer>=200)
+        if (Timer>=500)
         {
             Timer = 0;
             State = !State;

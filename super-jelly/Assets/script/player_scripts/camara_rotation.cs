@@ -59,6 +59,8 @@ public class camara_rotation : MonoBehaviour
 
     void Update()
     {
+        if(Time.timeScale != 0)
+        { 
         Vector3 fwd = transform.TransformDirection(-Vector3.forward);
 
         ViewObstructed();
@@ -88,6 +90,7 @@ public class camara_rotation : MonoBehaviour
                              Vector3.up * cameraVerticalOffset;
 
         transform.LookAt(target.position + lookAtVerticalOffset * Vector3.up);
+        }
     }
     public void funcionchangecharacter(Transform camera_guide)
     {

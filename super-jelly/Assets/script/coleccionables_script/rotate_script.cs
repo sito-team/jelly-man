@@ -17,7 +17,9 @@ public class rotate_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(Time.timeScale!=0)
+        { 
         transform.Rotate(rotate1, rotate2, rotate3);
+        }
     }
 }
