@@ -17,7 +17,7 @@ public class MouseBlock : MonoBehaviour
         if (cursorlocked)
         {
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = true;
+            Cursor.visible = false;
             
 
         }

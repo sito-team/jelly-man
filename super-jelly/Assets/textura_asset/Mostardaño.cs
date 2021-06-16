@@ -6,6 +6,7 @@ public class Mostardaño : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject cosa;
+    public AudioSource Daño;
     public float timer;
     void Start()
     {
@@ -17,7 +18,7 @@ public class Mostardaño : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-           
+            Daño.Play();
             cosa.SetActive(true);
             StartCoroutine("Damague");
         }
@@ -38,7 +39,7 @@ public class Mostardaño : MonoBehaviour
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            
+            Daño.Play();
             cosa.SetActive(true);
             StartCoroutine("Damague");
         }

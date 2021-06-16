@@ -14,11 +14,11 @@ public class musicstopwithoutsoundmanager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (sceneName == "cinema1")
+        if (sceneName == "cinema1"&& musicon==true)
         {
             music.SetActive(false);
         }
-        if (sceneName != "cinema1")
+        if (sceneName != "cinema1"&&musicon==false)
         {
             music.SetActive(true);
 

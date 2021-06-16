@@ -102,4 +102,8 @@ public class MenusFuctions : MonoBehaviour
     {
         SceneManager.LoadScene("creditos");
     }
+    public void lvl3()
+    {
+        SceneManager.LoadScene("LVL3");
+    }
 }

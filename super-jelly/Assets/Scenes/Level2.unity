@@ -872,7 +872,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 656601242}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1001 &71277424
 PrefabInstance:
@@ -1524,7 +1525,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 656601242}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1 &100059278
 GameObject:
@@ -3255,7 +3257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 656601242}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!114 &272466116
 MonoBehaviour:
@@ -3270,6 +3273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cosa: {fileID: 0}
+  "Da\xF1o": {fileID: 0}
   timer: 0
 --- !u!1001 &273733173
 PrefabInstance:
@@ -4130,7 +4134,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-33344
+  m_Name: pb_Mesh-5880
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4396,12 +4400,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -4588,7 +4597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 656601242}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1001 &351982920
 PrefabInstance:
@@ -4601,12 +4611,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -6073,7 +6088,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 656601242}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1 &432382580 stripped
 GameObject:
@@ -6929,7 +6945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 656601242}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1001 &488529933
 PrefabInstance:
@@ -7576,12 +7593,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -7674,6 +7696,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 499e29632fcd772429426bac354b5aa8, type: 3}
+--- !u!198 &543945889 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2328259307835147057, guid: 934acc453eba8da4dbce38eaab3a030f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1311693057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &544446113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 702dc3751b1b2cf4f833ca162605cda5,
@@ -7872,7 +7900,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-33280
+  m_Name: pb_Mesh-5822
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8897,6 +8925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cosa: {fileID: 0}
+  "Da\xF1o": {fileID: 0}
   timer: 1
 --- !u!1 &595877448 stripped
 GameObject:
@@ -9375,6 +9404,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0019056211, y: 0.008473543, z: 0.005993491}
   m_Center: {x: 0.00000015198025, y: -0.0000057613956, z: -0.00006190187}
+--- !u!1 &656601242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1261155305317704330, guid: 7342f9e13e7a9a54485464f01f75e480,
+    type: 3}
+  m_PrefabInstance: {fileID: 1639055319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &671520765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5909663473692199377, guid: 7a5b6ec207f01fa4497cf93af6648b55,
@@ -10602,6 +10637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cosa: {fileID: 0}
+  "Da\xF1o": {fileID: 0}
   timer: 1
 --- !u!1001 &772342586
 PrefabInstance:
@@ -11595,7 +11631,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 656601242}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1001 &816012369
 PrefabInstance:
@@ -12918,7 +12955,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1639055319}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1639055320}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25f3a0f1ce7194f4f93126c609c706f9, type: 3}
@@ -13037,7 +13074,7 @@ PrefabInstance:
         type: 3}
       propertyPath: camara_
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 909659405}
     - target: {fileID: 4913313480018379786, guid: 7a5b6ec207f01fa4497cf93af6648b55,
         type: 3}
       propertyPath: m_Name
@@ -13108,21 +13145,41 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 4913313480993979787, guid: 7a5b6ec207f01fa4497cf93af6648b55,
+        type: 3}
+      propertyPath: UpSP
+      value: 
+      objectReference: {fileID: 543945889}
     - target: {fileID: 4913313480993979788, guid: 7a5b6ec207f01fa4497cf93af6648b55,
         type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4913313480993979788, guid: 7a5b6ec207f01fa4497cf93af6648b55,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d2d3d89f2cedf9a43b7bc9a0338040c6, type: 3}
     - target: {fileID: 4913313481639135995, guid: 7a5b6ec207f01fa4497cf93af6648b55,
         type: 3}
       propertyPath: referenceCamera
       value: 
       objectReference: {fileID: 909659404}
+    - target: {fileID: 4913313481639135995, guid: 7a5b6ec207f01fa4497cf93af6648b55,
+        type: 3}
+      propertyPath: UpSP
+      value: 
+      objectReference: {fileID: 543945889}
     - target: {fileID: 4913313481639135996, guid: 7a5b6ec207f01fa4497cf93af6648b55,
         type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4913313481639135996, guid: 7a5b6ec207f01fa4497cf93af6648b55,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d2d3d89f2cedf9a43b7bc9a0338040c6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a5b6ec207f01fa4497cf93af6648b55, type: 3}
 --- !u!1 &924988148 stripped
@@ -13577,7 +13634,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 656601242}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1001 &948099503
 PrefabInstance:
@@ -16915,12 +16973,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -17666,7 +17729,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-33284
+  m_Name: pb_Mesh-5826
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19884,12 +19947,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -20447,6 +20515,133 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1371776595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1371776597}
+  - component: {fileID: 1371776596}
+  m_Layer: 0
+  m_Name: "Sonido de da\xF1o"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1371776596
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371776595}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f909081f1824f3843b7d4981cc0e92bc, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1371776597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371776595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.16037369, y: -0.33124924, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 283
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1376107359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20912,6 +21107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cosa: {fileID: 0}
+  "Da\xF1o": {fileID: 0}
   timer: 1
 --- !u!1001 &1410908501
 PrefabInstance:
@@ -22637,12 +22833,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -24285,6 +24486,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7342f9e13e7a9a54485464f01f75e480, type: 3}
+--- !u!1 &1639055320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3835096139477453692, guid: 7342f9e13e7a9a54485464f01f75e480,
+    type: 3}
+  m_PrefabInstance: {fileID: 1639055319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1639055321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639055320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bceadeb19a131a849904f0f8a6bdd2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorlock_bool: 1
 --- !u!1001 &1639835019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24667,12 +24887,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -25650,6 +25875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cosa: {fileID: 0}
+  "Da\xF1o": {fileID: 0}
   timer: 1
 --- !u!114 &1775551992
 MonoBehaviour:
@@ -26595,12 +26821,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -27205,12 +27436,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -28119,12 +28355,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -28937,12 +29178,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name
@@ -29043,7 +29289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 656601242}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1 &2035821092 stripped
 GameObject:
@@ -29581,7 +29828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 656601242}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1001 &2078098961
 PrefabInstance:
@@ -29594,12 +29842,17 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656601242}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
+        type: 3}
+      propertyPath: "Da\xF1o"
+      value: 
+      objectReference: {fileID: 1371776596}
     - target: {fileID: 1510071459083771598, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: m_Name

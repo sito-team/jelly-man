@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 947200999}
   - component: {fileID: 947201001}
   - component: {fileID: 947200998}
+  - component: {fileID: 947201002}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -387,6 +388,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enter2: 32
   enter: 13
+--- !u!114 &947201002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947200997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bceadeb19a131a849904f0f8a6bdd2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorlock_bool: 0
 --- !u!1 &1442206595
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,8 +755,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   youwin1: {fileID: 1645513989}
-  buttom: {fileID: 374196427}
-  buttom2: {fileID: 1442206595}
+  Buttom1: {fileID: 374196427}
+  Buttom2: {fileID: 1442206595}
 --- !u!1 &1891954038
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,5 +955,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   youwin1: {fileID: 1645513989}
-  buttom: {fileID: 374196427}
-  buttom2: {fileID: 1442206595}
+  Buttom1: {fileID: 374196427}
+  Buttom2: {fileID: 1442206595}
