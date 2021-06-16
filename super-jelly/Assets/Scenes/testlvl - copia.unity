@@ -75764,7 +75764,7 @@ GameObject:
   - component: {fileID: 1240771893}
   - component: {fileID: 1240771892}
   m_Layer: 9
-  m_Name: Cube (14)
+  m_Name: newdoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75837,8 +75837,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240771891}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 28.58, y: -2.251, z: -31.57}
-  m_LocalScale: {x: 1.446791, y: 21.587807, z: 4.67545}
+  m_LocalPosition: {x: 19.98, y: -2.251, z: 13.99}
+  m_LocalScale: {x: 1.446791, y: 21.587807, z: 19.343271}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 99
@@ -93846,7 +93846,7 @@ PrefabInstance:
         type: 3}
       propertyPath: door
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1240771891}
     - target: {fileID: 2128941296277621198, guid: dbd1c717f4b6462419de916de0594bb0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -110009,6 +110009,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: spawnpoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 1382403855287656370, guid: cbc7cd0d37b62cf4982f581fe0e6633e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1382403855287656374, guid: cbc7cd0d37b62cf4982f581fe0e6633e,
         type: 3}
