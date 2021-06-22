@@ -2027,6 +2027,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6781716908898120933, guid: a2a610403b120344dab1b4f0ec88749a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.02
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a610403b120344dab1b4f0ec88749a, type: 3}
 --- !u!1001 &110965354
@@ -6504,6 +6509,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6781716908898120933, guid: a2a610403b120344dab1b4f0ec88749a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.02
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a610403b120344dab1b4f0ec88749a, type: 3}
 --- !u!1 &429748157 stripped
@@ -7557,6 +7567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781716908898120933, guid: a2a610403b120344dab1b4f0ec88749a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a610403b120344dab1b4f0ec88749a, type: 3}
@@ -10087,6 +10102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781716908898120933, guid: a2a610403b120344dab1b4f0ec88749a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a610403b120344dab1b4f0ec88749a, type: 3}
@@ -13904,6 +13924,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: d2d3d89f2cedf9a43b7bc9a0338040c6, type: 3}
+    - target: {fileID: 4913313480993979788, guid: 7a5b6ec207f01fa4497cf93af6648b55,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 4913313481639135995, guid: 7a5b6ec207f01fa4497cf93af6648b55,
         type: 3}
       propertyPath: referenceCamera
@@ -13924,6 +13949,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: d2d3d89f2cedf9a43b7bc9a0338040c6, type: 3}
+    - target: {fileID: 4913313481639135996, guid: 7a5b6ec207f01fa4497cf93af6648b55,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a5b6ec207f01fa4497cf93af6648b55, type: 3}
 --- !u!1 &924988148 stripped
@@ -14357,6 +14387,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781716908898120933, guid: a2a610403b120344dab1b4f0ec88749a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a610403b120344dab1b4f0ec88749a, type: 3}
@@ -15090,6 +15125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781716908898120933, guid: a2a610403b120344dab1b4f0ec88749a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a610403b120344dab1b4f0ec88749a, type: 3}
@@ -20385,6 +20425,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6781716908898120933, guid: a2a610403b120344dab1b4f0ec88749a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.02
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a610403b120344dab1b4f0ec88749a, type: 3}
 --- !u!4 &1307687538 stripped
@@ -21492,7 +21537,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f909081f1824f3843b7d4981cc0e92bc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.08
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -22521,6 +22566,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781716908898120933, guid: a2a610403b120344dab1b4f0ec88749a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a610403b120344dab1b4f0ec88749a, type: 3}
@@ -25636,6 +25686,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2889921016335715230, guid: 7342f9e13e7a9a54485464f01f75e480,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2889921016335715230, guid: 7342f9e13e7a9a54485464f01f75e480,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.027
+      objectReference: {fileID: 0}
     - target: {fileID: 3835096139093534881, guid: 7342f9e13e7a9a54485464f01f75e480,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -25868,6 +25928,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781716908898120933, guid: a2a610403b120344dab1b4f0ec88749a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a610403b120344dab1b4f0ec88749a, type: 3}
@@ -31451,6 +31516,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6781716908898120933, guid: a2a610403b120344dab1b4f0ec88749a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2a610403b120344dab1b4f0ec88749a, type: 3}
