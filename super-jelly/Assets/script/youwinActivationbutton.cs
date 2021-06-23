@@ -14,4 +14,8 @@ public class youwinActivationbutton : MonoBehaviour
     {
         SceneManager.LoadScene("Level2");
     }
+    public void LVL3()
+    {
+        SceneManager.LoadScene("LVL3");
+    }
 }
