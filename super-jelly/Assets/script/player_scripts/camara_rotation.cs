@@ -44,6 +44,9 @@ public class camara_rotation : MonoBehaviour
     public Transform si;
     public GameObject[] hidenobjects;
 
+    public bool camaradisable;
+    public GameObject lookatme;
+
 
 
 
@@ -59,16 +62,22 @@ public class camara_rotation : MonoBehaviour
 
     void Update()
     {
-        if(Time.timeScale != 0)
+        if (Time.timeScale != 0 )
         { 
         Vector3 fwd = transform.TransformDirection(-Vector3.forward);
 
         ViewObstructed();
+   
+      
 
 
         angle += (Input.GetAxis(mouseAxis) * -1) * mouseSensitivity * Time.deltaTime;
+        if(camaradisable)
+            {
+                cameraVerticalOffset = anglemax;
+            }
 
-        if ((cameraVerticalOffset >= anglemax && (Input.GetAxis(mouseAxisy) * -1) > 0) || (cameraVerticalOffset <= anglemin && (Input.GetAxis(mouseAxisy) * -1) < 0))
+        else if ((cameraVerticalOffset >= anglemax && (Input.GetAxis(mouseAxisy) * -1) > 0) || (cameraVerticalOffset <= anglemin && (Input.GetAxis(mouseAxisy) * -1) < 0))
         {
 
         }
@@ -80,7 +89,6 @@ public class camara_rotation : MonoBehaviour
 
 
 
-
         angle += (Input.GetAxis(mouseAxis) * -1);
 
         transform.position = target.position +
@@ -88,9 +96,9 @@ public class camara_rotation : MonoBehaviour
                              Vector3.forward * cameraDistanceOffset * Mathf.Sin(Mathf.Deg2Rad * angle) +
                              Vector3.right * cameraDistanceOffset * Mathf.Cos(Mathf.Deg2Rad * angle) +
                              Vector3.up * cameraVerticalOffset;
-
         transform.LookAt(target.position + lookAtVerticalOffset * Vector3.up);
         }
+      
     }
     public void funcionchangecharacter(Transform camera_guide)
     {

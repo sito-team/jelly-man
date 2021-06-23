@@ -550,6 +550,7 @@ GameObject:
   - component: {fileID: 4048569931599864378}
   - component: {fileID: 4048569931599864379}
   - component: {fileID: 4048569931599864374}
+  - component: {fileID: 4048569931599864375}
   m_Layer: 0
   m_Name: Camera
   m_TagString: hud_shower
@@ -567,6 +568,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e49ee699b35d7c14491b81ed34829cca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4048569931599864375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4048569931599864373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ed50d3710295c42a75bc115d4e4b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cursorlock_bool: 1

@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public AudioSource Clip;
     public GameObject PausePanel;
-    public bool cursorlock_bool;
+    public bool cursorlock_bool=true;
     private bool active;
 
 
@@ -68,7 +68,7 @@ public class PauseMenu : MonoBehaviour
         if (cursorlocked)
         {
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = true;
+            Cursor.visible = false;
 
 
         }
