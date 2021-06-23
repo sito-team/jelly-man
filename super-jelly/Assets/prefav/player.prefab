@@ -1667,6 +1667,7 @@ MonoBehaviour:
   horizontalAxis: Horizontal
   verticalAxis: Vertical
   jumpButtonName: Jump
+  UpSP: {fileID: 0}
   movementSpeed: 6
   jumpForce: 1
   jumpForceMode: 1
@@ -2497,6 +2498,7 @@ MonoBehaviour:
   horizontalAxis: Horizontal
   verticalAxis: Vertical
   jumpButtonName: Jump
+  UpSP: {fileID: 0}
   movementSpeed: 7.7
   jumpForce: 7
   jumpForceMode: 1
