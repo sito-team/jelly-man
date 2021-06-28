@@ -15,7 +15,7 @@ public class boss : MonoBehaviour
     void Start()
     {
         ani = GetComponent<Animator>();
-        target = GameObject.Find("player");
+        target = GameObject.Find("personaje_normal");
     }
     public void comportamiento_enemigo()
        
@@ -87,5 +87,6 @@ public class boss : MonoBehaviour
     void Update()
     {
         comportamiento_enemigo();
+        Debug.Log(Vector3.Distance(transform.position, target.transform.position));
     }
 }
