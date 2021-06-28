@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FireTimer : MonoBehaviour
 {
-    public int Timer = 0;
+    public float Timer = 0;
     public int timeractivation = 0;
     public int timerreactivation = 20;
     public GameObject Fire;
@@ -16,8 +16,9 @@ public class FireTimer : MonoBehaviour
     
     void Update()
     {
-        Timer++;
-        if (Timer>=500)
+        Timer= Timer + Time.deltaTime;
+     
+        if (Timer>=5f)
         {
             Timer = 0;
             State = !State;

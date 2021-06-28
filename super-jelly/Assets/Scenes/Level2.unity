@@ -488,7 +488,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278674
+  m_Name: pb_Mesh-52918
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 1334453804}
   "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1001 &71277424
@@ -1995,8 +1995,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
-  "Da\xF1o": {fileID: 0}
+  cosa: {fileID: 1334453804}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 0
 --- !u!114 &73108500
 MonoBehaviour:
@@ -3217,7 +3217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 1334453804}
   "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1 &100059278
@@ -3851,7 +3851,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278830
+  m_Name: pb_Mesh-53074
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4118,7 +4118,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278672
+  m_Name: pb_Mesh-52916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4884,7 +4884,7 @@ PrefabInstance:
     - target: {fileID: 4484557469425325069, guid: d0b66d85343a3a842b340e839e7251a9,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 159.00146
+      value: 326
       objectReference: {fileID: 0}
     - target: {fileID: 4484557469425325069, guid: d0b66d85343a3a842b340e839e7251a9,
         type: 3}
@@ -5220,7 +5220,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278826
+  m_Name: pb_Mesh-53070
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5883,7 +5883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer: 0
   timeractivation: 0
-  timerreactivation: 200
+  timerreactivation: 20
   Fire: {fileID: 1404834073}
   Fire2: {fileID: 1775551990}
   Fire3: {fileID: 594235113}
@@ -6354,7 +6354,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278670
+  m_Name: pb_Mesh-52914
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7181,8 +7181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
-  "Da\xF1o": {fileID: 0}
+  cosa: {fileID: 1334453804}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 0
 --- !u!114 &265597129
 MonoBehaviour:
@@ -7230,7 +7230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 1334453804}
   "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!114 &272466116
@@ -9269,7 +9269,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -9460,7 +9460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 1334453804}
   "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1001 &353771398
@@ -11360,7 +11360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 1334453804}
   "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!43 &431352968
@@ -11369,7 +11369,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278986
+  m_Name: pb_Mesh-53230
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12797,7 +12797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 1334453804}
   "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1001 &484128073
@@ -14017,7 +14017,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -18635,7 +18635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 1334453804}
   "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!114 &813621163 stripped
@@ -19630,8 +19630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
-  "Da\xF1o": {fileID: 0}
+  cosa: {fileID: 1334453804}
+  "Da\xF1o": {fileID: 1371776596}
   timer: 0
 --- !u!65 &844446163
 BoxCollider:
@@ -21383,7 +21383,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278990
+  m_Name: pb_Mesh-53234
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21775,7 +21775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 1334453804}
   "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1001 &948099503
@@ -24033,7 +24033,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278822
+  m_Name: pb_Mesh-53066
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26240,7 +26240,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -29339,7 +29339,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -29432,6 +29432,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 499e29632fcd772429426bac354b5aa8, type: 3}
+--- !u!1 &1334453804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1910688210170657340, guid: d0b66d85343a3a842b340e839e7251a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 149870122}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1334620797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30964,7 +30970,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278678
+  m_Name: pb_Mesh-52922
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32928,7 +32934,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -35656,7 +35662,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -37407,8 +37413,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timer: 0
-  timeractivation: 5
-  timerreactivation: 0
+  timeractivation: 0
+  timerreactivation: 20
   Fire: {fileID: 211368086}
   Fire2: {fileID: 0}
   Fire3: {fileID: 0}
@@ -38987,7 +38993,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -39721,7 +39727,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -40023,7 +40029,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-278824
+  m_Name: pb_Mesh-53068
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40999,7 +41005,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -42204,7 +42210,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
@@ -42315,7 +42321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 1334453804}
   "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1 &2035821092 stripped
@@ -42376,7 +42382,7 @@ PrefabInstance:
     - target: {fileID: 8618708424508371047, guid: 9ff09e22817e1e449b48af4e7a9d3b47,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8618708424508371047, guid: 9ff09e22817e1e449b48af4e7a9d3b47,
         type: 3}
@@ -43153,7 +43159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0606e59263165e94dae5d35524cc162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosa: {fileID: 0}
+  cosa: {fileID: 1334453804}
   "Da\xF1o": {fileID: 1371776596}
   timer: 1
 --- !u!1 &2073498483
@@ -43259,7 +43265,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosa
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1334453804}
     - target: {fileID: 48934947331048226, guid: 499e29632fcd772429426bac354b5aa8,
         type: 3}
       propertyPath: timer
