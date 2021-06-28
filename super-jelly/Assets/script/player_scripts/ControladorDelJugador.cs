@@ -15,17 +15,27 @@ public class ControladorDelJugador : MonoBehaviour
     public float shaketime =0.5f;
     Vector3 sos;
 
+   
+    public GameObject changecharacte;
+    private changecaracter frizz;
 
 
 
     Rigidbody rb;
 
- 
+
 
     void Awake()
     {
+        changecharacte = GameObject.FindWithTag("change_character_system");
         rb = GetComponent<Rigidbody>();
-   
+        if(changecharacte==null)
+        {
+            changecharacte = GameObject.FindWithTag("change_character_system");
+            
+
+        }
+        frizz = changecharacte.GetComponent<changecaracter>();
       
       
     }
@@ -46,6 +56,8 @@ public class ControladorDelJugador : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(frizz.frized==false)
+        { 
         float movimientoHorizontal = Input.GetAxis("Horizontal");
         float movimientoVertical = Input.GetAxis("Vertical");
         Vector3 correctedCameraForward = referenceCamera.forward*movimientoVertical;
@@ -64,6 +76,7 @@ public class ControladorDelJugador : MonoBehaviour
         rb.drag = vel_slow;
         rb.angularDrag = vel_slow;
         sos = rb.velocity;
+        }
 
 
     }

@@ -33,41 +33,59 @@ public class character_basic_move : MonoBehaviour
     [Range(1.0f, 100f)]
     public float falsagravedad;
 
+    
+    public GameObject changecharacte;
+    private changecaracter frizz;
+
 
     public status_changer status;
 
-    
-  
+    private void Awake()
+    {
+        changecharacte = GameObject.FindWithTag("change_character_system");
+
+        frizz = changecharacte.GetComponent<changecaracter>();
+
+    }
+
 
     public void Update()
     {
 
+        if (frizz.frized == false)
+        {
+            transform.LookAt(transform.position + inputVector);
+            myRigidBody.MovePosition(transform.position + inputVector * (vel_slow * movementSpeed * Time.deltaTime));
+
+            inputVector = Input.GetAxis(horizontalAxis) * referenceCamera.right;
+            
+
+            Vector3 correctedCameraForward = referenceCamera.forward;
+            correctedCameraForward.y = 0f;
+            correctedCameraForward.Normalize();
+
+            inputVector += Input.GetAxis(verticalAxis) * correctedCameraForward;
 
 
+            
+            
 
-        inputVector = Input.GetAxis(horizontalAxis) * referenceCamera.right;
-
-        Vector3 correctedCameraForward = referenceCamera.forward;
-        correctedCameraForward.y = 0f;
-        correctedCameraForward.Normalize();
-
-        inputVector += Input.GetAxis(verticalAxis) * correctedCameraForward;
-
-        if (!feet.grounded)
+            if (!feet.grounded)
         {
             myRigidBody.AddForce(Vector3.down * falsagravedad, ForceMode.Force);
         }
        
 
         jump();
+        }
 
     }
 
-    private void FixedUpdate()
-    {
-        transform.LookAt(transform.position + inputVector);
-        myRigidBody.MovePosition(transform.position + inputVector * (vel_slow*movementSpeed * Time.deltaTime));
-    }
+  //  private void FixedUpdate()
+  //  {
+   //     transform.LookAt(transform.position + inputVector);
+   //     myRigidBody.MovePosition(transform.position + inputVector * (vel_slow*movementSpeed * Time.deltaTime));
+    //}
     public void slowforce(float slowmo)
     {
         vel_slow = slowmo;

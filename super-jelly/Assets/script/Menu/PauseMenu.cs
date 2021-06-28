@@ -20,16 +20,17 @@ public class PauseMenu : MonoBehaviour
     }
     public void Update()
     {
+        if (Input.GetKeyDown("enter")  ||  Input.GetKeyUp(KeyCode.P) && active)
+        {
+            Return();
+        }
+        else if (Input.GetKeyDown("enter")   || Input.GetKeyUp(KeyCode.P) && !active)
+        {
+            Pausemenu();
+
+        }
         
-         if (Input.GetKeyUp(KeyCode.P) && !active)
-         {
-                Pausemenu();
-               
-         }
-        //if (Input.GetKeyUp(KeyCode.P) && active)
-        //{
-        //    Return();
-       // }
+   
 
 
     }
@@ -38,7 +39,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0;
         PausePanel.SetActive(true);
         mouselock(false);
-       // StartCoroutine(wait(1));
+        StartCoroutine(wait(1));
         active = true;
 
 

@@ -7,6 +7,7 @@ using UnityEngine.Playables;
 public class cinematicend : MonoBehaviour
 {
     public GameObject player;
+    public Camera cinemachine;
     public Camera cam;
     public AudioSource goku;
     public Camera cinematic;
@@ -15,7 +16,10 @@ public class cinematicend : MonoBehaviour
         player.GetComponent<character_basic_move>().enabled = false;
         goku.Play();
         cam.enabled = false;
+        
         cam.GetComponent<AudioListener>().enabled = false;
+       
+       
     }
     void Update()
     {
@@ -26,6 +30,9 @@ public class cinematicend : MonoBehaviour
             cinematic.GetComponent<AudioListener>().enabled = false;
             cam.enabled = true;
             cam.GetComponent<AudioListener>().enabled = true;
+            cinemachine.enabled = false;
+            Destroy(cinemachine);
+            Destroy(this);
         }
 
     }

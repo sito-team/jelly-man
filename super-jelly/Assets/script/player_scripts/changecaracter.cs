@@ -11,6 +11,7 @@ public class changecaracter : MonoBehaviour
     public GameObject[] form;
     private bool[] comprobation = new bool[10];
     public int actualformposition;
+    public bool frized;
 
     public void Update()
     {

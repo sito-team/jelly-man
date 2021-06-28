@@ -9,6 +9,14 @@ public class collec_life : collect_item
     }
     public override void thipeofitem()
     {
-        lifeup.life_up(1);
+        
+        
+        if(life_state)
+        {
+          
+            lifeup.life_up(1);
+            Destroy(gameObject);
+        }
+
     }
 }

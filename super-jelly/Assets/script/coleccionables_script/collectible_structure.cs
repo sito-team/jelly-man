@@ -19,17 +19,21 @@ public class collectible_structure : MonoBehaviour
     public int total_key;
     public int max_key;
     public int collected_keys;
-    private bool door_interaction;
     public GameObject door;
-
-    void Start()
+    public door_varian_open door_activation;
+    private void Start()
     {
         total_key = GameObject.FindGameObjectsWithTag("key").Length;
+        door = GameObject.FindGameObjectWithTag("door");
+        door_activation = door.GetComponent<door_varian_open>();
         life = hearts.Length;
         maxlife = life;
         total_keys_text.text = total_key.ToString();
         actual_keys_text.text = collected_keys.ToString();
+         door_activation.cerrojo_key_total=total_key-1;
     }
+    
+
 
     // Update is called once per frame
     void Update()
@@ -37,16 +41,17 @@ public class collectible_structure : MonoBehaviour
         if(dead)
             SceneManager.LoadScene("lose");
 
-        if (door_interaction)
-            Destroy(door);
+       
     }
 
     public void key_grab(int g)
     {
         collected_keys += g;
         actual_keys_text.text = collected_keys.ToString();
-        if (total_key == collected_keys )
-            door_interaction = true;
+        door_activation.door_open();
+        
+
+
     }
 
 
