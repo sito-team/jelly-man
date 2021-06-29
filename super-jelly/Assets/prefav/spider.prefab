@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3783924786946519851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1394648775274222876}
+  - component: {fileID: 2132899251142332216}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1394648775274222876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3783924786946519851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6781716907992878783}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2132899251142332216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3783924786946519851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f286f3e16618e424f8893bfe54c9b0fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closeDistance: 5
+  lifeless: {fileID: 0}
+  espisable: 0
+  "tipo_de_da\xF1o": 0
+  invuneability: 6
 --- !u!1 &6781716907992715905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,6 +1954,7 @@ Transform:
   - {fileID: 6781716907992878827}
   - {fileID: 6781716907992878777}
   - {fileID: 6781716908898120932}
+  - {fileID: 1394648775274222876}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1993,7 +2042,7 @@ GameObject:
   - component: {fileID: 6781716908898120930}
   - component: {fileID: 6781716907984132756}
   - component: {fileID: 6781716908898120933}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2087,6 +2136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeless: {fileID: 0}
   squash: {fileID: 6781716908898120933}
+  enemyscript: {fileID: 2132899251142332216}
+  invuneability: 6
+  "tipo_de_da\xF1o": 1
 --- !u!82 &6781716908898120933
 AudioSource:
   m_ObjectHideFlags: 0

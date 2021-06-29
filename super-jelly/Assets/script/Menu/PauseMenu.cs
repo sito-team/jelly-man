@@ -10,6 +10,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject PausePanel;
     public bool cursorlock_bool=true;
     private bool active;
+    public GameObject toggles1;
+    public GameObject toggle;
+    private int toggle_position=0;
 
 
     public void Start()
@@ -20,18 +23,52 @@ public class PauseMenu : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetKeyDown("enter")  ||  Input.GetKeyUp(KeyCode.P) && active)
+        if (Time.timeScale == 0)
+        {
+          
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                toggle_position--;
+                toggle.transform.position = (540
+                toggles1.transform.position.y += 20;
+
+
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                toggle_position++;
+                toggle.transform.position += new Vector3(0, -1, 0);
+                toggles1.transform.position += new Vector3(0, -1, 0);
+
+            }
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                switch (toggle_position)
+                {
+                    case 0:
+                        Return();
+                        break;
+                    case 1:
+                        BackMainMenu();
+                        break;
+                    case 2:
+                        quit();
+                        break;
+                }
+            }
+        }
+        
+        if ( Input.GetKeyUp(KeyCode.P) && active)
         {
             Return();
         }
-        else if (Input.GetKeyDown("enter")   || Input.GetKeyUp(KeyCode.P) && !active)
+        else if ( Input.GetKeyUp(KeyCode.P) && !active)
         {
             Pausemenu();
 
         }
-        
-   
 
+        
 
     }
     public void Pausemenu()

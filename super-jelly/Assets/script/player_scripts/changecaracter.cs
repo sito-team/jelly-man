@@ -43,5 +43,13 @@ public class changecaracter : MonoBehaviour
             form[actualformposition].gameObject.SetActive(false);
         }
     }
+    public void nanomachines_son()
+    {
+        Physics.IgnoreLayerCollision(8, 12,true);
+    }
+    public void respondto_physicaltrauma()
+    {
+        Physics.IgnoreLayerCollision(8, 12, false);
+    }
 
 }

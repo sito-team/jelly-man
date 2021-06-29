@@ -8,6 +8,9 @@ public class enemy_spider : MonoBehaviour
     // Start is called before the first frame update
     public collectible_structure lifeless;
     public AudioSource squash;
+    public enemy enemyscript;
+    public float invuneability = 6;
+    public bool tipo_de_daño = true;
     private void Start()
     {
         lifeless = GameObject.FindGameObjectWithTag("hud_shower").GetComponent<collectible_structure>();
@@ -28,9 +31,7 @@ public class enemy_spider : MonoBehaviour
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            other.gameObject.transform.position = FindClosestEnemy().transform.position;
-
-            lifeless.takedamage(1);
+            enemyscript.damage_kind(tipo_de_daño, other.gameObject);
         }
     }
 

@@ -88,7 +88,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706119013210902287}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -105,6 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b127a1c5249ce2543b5f92c935ef1c72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnpoint: {fileID: 1753481472991324874, guid: a0ccc5e1bba5b8044ba2f66983d899ae,
-    type: 3}
+  closeDistance: 5
+  lifeless: {fileID: 0}
+  espisable: 0
+  "tipo_de_da\xF1o": 0
   movementSpeed: 10
