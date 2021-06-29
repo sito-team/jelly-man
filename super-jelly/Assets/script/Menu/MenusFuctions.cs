@@ -84,7 +84,7 @@ public class MenusFuctions : MonoBehaviour
     public void Lvl1()
     {
    
-        SceneManager.LoadScene("cinema1");
+        SceneManager.LoadScene("Tutorial");
     }
     public void Lvl2()
     {
