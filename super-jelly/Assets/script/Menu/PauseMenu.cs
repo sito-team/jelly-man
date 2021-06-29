@@ -23,41 +23,41 @@ public class PauseMenu : MonoBehaviour
     }
     public void Update()
     {
-        if (Time.timeScale == 0)
-        {
-          
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                toggle_position--;
-                toggle.transform.position = (540
-                toggles1.transform.position.y += 20;
+        // if (Time.timeScale == 0)
+        // {
+
+        //     if (Input.GetKeyDown(KeyCode.W))
+        //     {
+        //         toggle_position--;
+        //         toggle.transform.position = (540
+        //         toggles1.transform.position.y += 20;
 
 
-            }
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                toggle_position++;
-                toggle.transform.position += new Vector3(0, -1, 0);
-                toggles1.transform.position += new Vector3(0, -1, 0);
+        //    }
+        //    if (Input.GetKeyDown(KeyCode.S))
+        //   {
+        //        toggle_position++;
+        //        toggle.transform.position += new Vector3(0, -1, 0);
+        //        toggles1.transform.position += new Vector3(0, -1, 0);
 
-            }
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                switch (toggle_position)
-                {
-                    case 0:
-                        Return();
-                        break;
-                    case 1:
-                        BackMainMenu();
-                        break;
-                    case 2:
-                        quit();
-                        break;
-                }
-            }
-        }
-        
+        //    }
+        //   if (Input.GetKeyDown(KeyCode.Return))
+        //   {
+        //       switch (toggle_position)
+        //      {
+        //         case 0:
+        //              Return();
+        //  break;
+        //               case 1:
+        //  BackMainMenu();
+        //  break;
+        //             case 2:
+        //  quit();
+        //  break;
+        //   }
+        //  }
+        //  }
+
         if ( Input.GetKeyUp(KeyCode.P) && active)
         {
             Return();
