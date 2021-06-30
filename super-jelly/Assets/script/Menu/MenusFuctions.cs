@@ -84,7 +84,7 @@ public class MenusFuctions : MonoBehaviour
     public void Lvl1()
     {
    
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("LVL1");
     }
     public void Lvl2()
     {
@@ -105,5 +105,9 @@ public class MenusFuctions : MonoBehaviour
     public void lvl3()
     {
         SceneManager.LoadScene("LVL3");
+    }
+    public void InicioJuego()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 }
