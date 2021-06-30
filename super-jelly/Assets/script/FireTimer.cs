@@ -19,17 +19,29 @@ public class FireTimer : MonoBehaviour
     {
         Timer= Timer + Time.deltaTime;
      
-        if (Timer>=5f)
+        if (Timer>=1f)
         {
-            Timer = 0;
-            State = !State;
             
-            Fire.gameObject.SetActive(State);
-            Fire2.gameObject.SetActive(State);
-            Fire3.gameObject.SetActive(State);
-            Fire4.gameObject.SetActive(State);
-      
+            
+          
+            StartCoroutine(wait(1));
         }
+      
+
         
+    }
+    IEnumerator wait(float regeneration)
+    {
+        Fuego.SetActive(true);
+       
+        yield return new WaitForSeconds(regeneration);
+        Fire.gameObject.SetActive(State);
+        Fire2.gameObject.SetActive(State);
+        Fire3.gameObject.SetActive(State);
+        Fire4.gameObject.SetActive(State);
+        Fuego.SetActive(true);
+        Timer = 0;
+        State = !State;
+
     }
 }
