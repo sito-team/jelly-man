@@ -108,6 +108,6 @@ public class MenusFuctions : MonoBehaviour
     }
     public void InicioJuego()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Opciones");
     }
 }
