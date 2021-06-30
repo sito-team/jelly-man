@@ -4228,6 +4228,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2616886803466118925, guid: 18b2ae58c9bab3f47a15076a4fd41b3e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2616886803520410866, guid: 18b2ae58c9bab3f47a15076a4fd41b3e,
         type: 3}
       propertyPath: regeneratetime
@@ -4307,6 +4312,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 205.4585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616886803556346731, guid: 18b2ae58c9bab3f47a15076a4fd41b3e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b2ae58c9bab3f47a15076a4fd41b3e, type: 3}
@@ -52560,6 +52570,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573769349698886378, guid: d0b66d85343a3a842b340e839e7251a9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 41.010742
       objectReference: {fileID: 0}
     - target: {fileID: 4484557469337949120, guid: d0b66d85343a3a842b340e839e7251a9,
         type: 3}
