@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 879, y: 494}
-  m_MaxSize: {x: 16004, y: 14044}
+  m_MinSize: {x: 885, y: 494}
+  m_MaxSize: {x: 16010, y: 14044}
   vertical: 0
-  controlID: 11211
+  controlID: 7202
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1358
     height: 947
-  m_MinSize: {x: 604, y: 494}
-  m_MaxSize: {x: 12004, y: 14044}
+  m_MinSize: {x: 608, y: 494}
+  m_MaxSize: {x: 12008, y: 14044}
   vertical: 1
-  controlID: 11212
+  controlID: 7203
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 1358
     height: 425
-  m_MinSize: {x: 604, y: 222}
-  m_MaxSize: {x: 12004, y: 4022}
+  m_MinSize: {x: 608, y: 222}
+  m_MaxSize: {x: 12008, y: 4022}
   vertical: 0
-  controlID: 11213
+  controlID: 7204
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -412,9 +412,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: aa0f0100a80f0100
-      m_LastClickedID: 0
-      m_ExpandedIDs: 52bfffff3ac0ffffbc8f000002900000a89000005e910000
+      m_SelectedIDs: f4eeffff
+      m_LastClickedID: -4364
+      m_ExpandedIDs: 30f4ffff70fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -474,9 +474,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.020294, y: 5.033218, z: -9.246624}
+    m_Target: {x: -278.29874, y: 133.98277, z: 323.16495}
     speed: 2
-    m_Value: {x: 4.020294, y: 5.033218, z: -9.246624}
+    m_Value: {x: -278.29874, y: 133.98277, z: 323.16495}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -505,13 +505,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.29375982, y: 0.22773482, z: -0.080745466, w: -0.9264797}
+    m_Target: {x: -0.21481216, y: 0.23354848, z: -0.062077664, w: -0.94789344}
     speed: 2
-    m_Value: {x: -0.29375982, y: 0.22773483, z: -0.080745466, w: -0.9264797}
+    m_Value: {x: -0.21439266, y: 0.23461317, z: -0.062305033, w: -0.94610286}
   m_Size:
-    m_Target: 2.625468
+    m_Target: 4.639821
     speed: 2
-    m_Value: 2.625468
+    m_Value: 4.9398212
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -904,20 +904,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/textura_asset
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/textura_asset
+  - Assets
   m_LastFoldersGridSize: 67
   m_LastProjectPath: D:\GitHub\jelly-man\super-jelly
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 2023}
-    m_SelectedIDs: 92620000
-    m_LastClickedID: 25234
-    m_ExpandedIDs: 00000000a25f0000b661000056620000926200002063000034630000b0690000406b0000546b0000706b0000e26c0000226e0000d86e00005870000084710000ca71000066720000787300007a780000b0780000ca7a0000c27b00008e7c0000ce7d0000b67e0000cc7f0000c480000008820000f8820000b28800007c890000de8a0000c88b0000e88c0000288d0000a68d0000808f0000828f000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 82380000
+    m_LastClickedID: 14466
+    m_ExpandedIDs: 0000000082380000a43a0000483b0000863b0000143c0000283c0000fe42000096440000aa440000cc44000060460000ce47000084480000544a0000b04b0000fe4b0000a24c0000da4d00001053000048530000885500008456000052570000a6580000aa590000e85a0000e65b00002e5d00006a5e00008064000050650000bc660000ac670000d66800001a690000a6690000047300000673000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -945,7 +945,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a25f0000b661000056620000926200002063000034630000b0690000406b0000546b0000706b0000e26c0000226e0000d86e00005870000084710000ca71000066720000787300007a780000b0780000ca7a0000c27b00008e7c0000ce7d0000b67e0000cc7f0000c480000008820000f8820000b28800007c890000de8a0000c88b0000e88c0000288d0000a68d0000808f0000828f000000ca9a3b
+    m_ExpandedIDs: 0000000082380000a43a0000483b0000863b0000143c0000283c0000fe42000096440000aa440000cc44000060460000ce47000084480000544a0000b04b0000fe4b0000a24c0000da4d00001053000048530000885500008456000052570000a6580000aa590000e85a0000e65b00002e5d00006a5e00008064000050650000bc660000ac670000d66800001a690000a6690000047300000673000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -997,7 +997,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 240}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 67
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 220
@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 37214
+  m_LastSelectedObjectID: 35158
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
