@@ -7,7 +7,7 @@ public class happy_mov : MonoBehaviour
     // Start is called before the first frame update
 
 
-    public Text happy;
+    public GameObject happy;
     public float a;
     public float b;
     public float c;
