@@ -87,6 +87,6 @@ public class boss : MonoBehaviour
     void Update()
     {
         comportamiento_enemigo();
-        Debug.Log(Vector3.Distance(transform.position, target.transform.position));
+        //Debug.Log(Vector3.Distance(transform.position, target.transform.position));
     }
 }

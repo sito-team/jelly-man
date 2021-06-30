@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemy_patrol : MonoBehaviour
 {
     // Start is called before the first frame update
-    float speed = 2.0f;
+    public float speed = 2.0f;
     public Transform target;
     void Start()
     {
