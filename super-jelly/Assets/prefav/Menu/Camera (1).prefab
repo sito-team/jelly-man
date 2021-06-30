@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.013183594, y: 41.00244}
+  m_AnchoredPosition: {x: 0.013183594, y: 41.002472}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3021514738535616473
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 1531039518155513927}
   - component: {fileID: 8261055974218671707}
   m_Layer: 5
-  m_Name: Image
+  m_Name: DamegeImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -742,7 +742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.36}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -505, y: 501}
+  m_AnchoredPosition: {x: -647, y: 421}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5708850004073675093
@@ -1135,7 +1135,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4887
@@ -1399,7 +1399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1583.9791, y: -170.02057}
+  m_AnchoredPosition: {x: -1754, y: -170.02057}
   m_SizeDelta: {x: 620.7, y: 458.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4484557469898239462
@@ -1473,7 +1473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1584.0114, y: -170.02057}
+  m_AnchoredPosition: {x: -1754.0135, y: -170.02057}
   m_SizeDelta: {x: 620.7, y: 458.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4484557469904659655
@@ -1547,7 +1547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1584.0114, y: -170.02057}
+  m_AnchoredPosition: {x: -1754.0135, y: -170.02057}
   m_SizeDelta: {x: 620.7, y: 458.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4484557469990023185
@@ -2362,7 +2362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &422339198242618760
 RectTransform:
   m_ObjectHideFlags: 0

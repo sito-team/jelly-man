@@ -9,7 +9,7 @@ public class lvlend : MonoBehaviour
     private void OnCollisionEnter(Collision player_collision_verifict)
     {
         if (player_collision_verifict.collider.gameObject.layer == LayerMask.NameToLayer("Player"))
-         SceneManager.LoadScene("win");
+         SceneManager.LoadScene("creditos");
 
 
       
