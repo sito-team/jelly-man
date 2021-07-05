@@ -1978,9 +1978,10 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: nanomachines_son
+    functionName: InvunerabilityOn
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 11500000, guid: 44f39a7edfd88c649a20524c5b232e05,
+      type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2776546150042097400}
   - component: {fileID: 5020759474433071879}
   - component: {fileID: 2207150599307057464}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,8 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b127a1c5249ce2543b5f92c935ef1c72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeDistance: 5
+  damageTaken: 1
   lifeless: {fileID: 0}
-  espisable: 0
-  "tipo_de_da\xF1o": 0
+  damageType: 1
+  invuneabilitytime: 6
   movementSpeed: 10

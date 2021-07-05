@@ -9616,19 +9616,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!65 &2616886802663463274
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6665607022830901953}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.036990456, y: 0.06518426, z: 0.0067063463}
-  m_Center: {x: -0.000000029802322, y: 0.033060472, z: -0.0000000055879354}
 --- !u!1 &2616886802665640999
 GameObject:
   m_ObjectHideFlags: 0
@@ -19833,15 +19820,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5517e07fe6d5ad42bfdffd37eb038fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cerrojo_key_total: 0
-  key_counter: 0
-  animator_key_to_fill:
+  keySlotsl:
   - {fileID: 2616886802832295178}
   - {fileID: 2616886803741193302}
   - {fileID: 2616886803458465535}
   - {fileID: 2616886803182372976}
   - {fileID: 2616886802665640993}
-  regeneratetime: 2
 --- !u!95 &2616886803520410877
 Animator:
   serializedVersion: 3
@@ -24976,6 +24960,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!65 &2616886802663463274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6665607022830901953}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.036990456, y: 0.06518426, z: 0.0067063463}
+  m_Center: {x: -0.000000029802322, y: 0.033060472, z: -0.0000000055879354}
 --- !u!1001 &2616886802280098935
 PrefabInstance:
   m_ObjectHideFlags: 0

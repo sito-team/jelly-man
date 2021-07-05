@@ -174,8 +174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   funcion: {fileID: 0}
-  ballfunction: {fileID: 0}
-  slow_force: 0.483
+  ballFunction: {fileID: 0}
+  SlowForce: 0.573
 --- !u!65 &4096931349704969372
 BoxCollider:
   m_ObjectHideFlags: 0
