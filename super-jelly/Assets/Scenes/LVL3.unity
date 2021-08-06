@@ -6546,11 +6546,31 @@ PrefabInstance:
       propertyPath: referenceCamera
       value: 
       objectReference: {fileID: 939447672}
+    - target: {fileID: 4913313480993979787, guid: 7a5b6ec207f01fa4497cf93af6648b55,
+        type: 3}
+      propertyPath: spawnSoundName
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913313480993979788, guid: 7a5b6ec207f01fa4497cf93af6648b55,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4913313481639135995, guid: 7a5b6ec207f01fa4497cf93af6648b55,
         type: 3}
       propertyPath: referenceCamera
       value: 
       objectReference: {fileID: 939447672}
+    - target: {fileID: 4913313481639135995, guid: 7a5b6ec207f01fa4497cf93af6648b55,
+        type: 3}
+      propertyPath: spawnSoundName
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913313481639135996, guid: 7a5b6ec207f01fa4497cf93af6648b55,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a5b6ec207f01fa4497cf93af6648b55, type: 3}
 --- !u!1 &639839458 stripped
@@ -13865,6 +13885,21 @@ PrefabInstance:
       propertyPath: door
       value: 
       objectReference: {fileID: 710127517}
+    - target: {fileID: 4484557469337949120, guid: d0b66d85343a3a842b340e839e7251a9,
+        type: 3}
+      propertyPath: spawnSoundName
+      value: Ouch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484557469337949120, guid: d0b66d85343a3a842b340e839e7251a9,
+        type: 3}
+      propertyPath: spawnSoundNameKey
+      value: Keys
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484557469337949120, guid: d0b66d85343a3a842b340e839e7251a9,
+        type: 3}
+      propertyPath: spawnSoundNameHeart
+      value: LifeUp
+      objectReference: {fileID: 0}
     - target: {fileID: 4484557469337949125, guid: d0b66d85343a3a842b340e839e7251a9,
         type: 3}
       propertyPath: m_Depth
@@ -20626,6 +20661,11 @@ PrefabInstance:
       propertyPath: happy
       value: 
       objectReference: {fileID: 974640316}
+    - target: {fileID: 4406193502590457011, guid: 13481a384eccf8d46974f7ae66a62cc5,
+        type: 3}
+      propertyPath: spawnSoundName
+      value: Happy
+      objectReference: {fileID: 0}
     - target: {fileID: 5161633397557474162, guid: 13481a384eccf8d46974f7ae66a62cc5,
         type: 3}
       propertyPath: m_LocalPosition.y

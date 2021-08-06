@@ -24,6 +24,12 @@ public class collectible_structure : MonoBehaviour
     private      GameObject               door;
     private      door_varian_open         doorActivation;
     //____________________________________________________
+
+    private AudioManager audioManager; 
+    public string spawnSoundName;
+    public string spawnSoundNameKey;
+    public string spawnSoundNameHeart;
+    
     #endregion
 
 
@@ -38,6 +44,7 @@ public class collectible_structure : MonoBehaviour
         totalKeysText.text = TotalKey.ToString();
         actualKeysText.text = collected_keys.ToString();
         doorActivation.TotalKey=TotalKey-1;
+        audioManager = AudioManager.instance;
     }
     
 
@@ -47,7 +54,7 @@ public class collectible_structure : MonoBehaviour
 
     public void KeyGrab(int g)
     {
-        SoundmanagerM.Playsound(SoundmanagerM.Sound.collectKey);
+        audioManager.PlaySound(spawnSoundNameKey);
         collected_keys += g;
         actualKeysText.text = collected_keys.ToString();
         doorActivation.DoorOpen();
@@ -60,7 +67,7 @@ public class collectible_structure : MonoBehaviour
 
      public void TakeDamage (int d)
      {
-        SoundmanagerM.Playsound(SoundmanagerM.Sound.damage);
+        audioManager.PlaySound(spawnSoundName);
         life -= d;
         hearts[life].gameObject.SetActive(false);
             if (life<=0)
@@ -84,7 +91,7 @@ public class collectible_structure : MonoBehaviour
         }
         else
         {
-            SoundmanagerM.Playsound(SoundmanagerM.Sound.lifeup);
+            audioManager.PlaySound(spawnSoundNameHeart);
             life += c;
             hearts[actuallife].gameObject.SetActive(true);
         }

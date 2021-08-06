@@ -11,14 +11,19 @@ public class enemy_spider : MonoBehaviour
     public           enemy                           enemyscript;
     public           float                           invuneability = 6;
     public           bool                            damageType = true;
+
+    AudioManager audioManager; 
+    public string spawnSoundName;
     #endregion
 
 
 
     private void Start()
     {
-        if(lifeless==null)
+        audioManager = AudioManager.instance;
+        if (lifeless==null)
         lifeless = GameObject.FindGameObjectWithTag("hud_shower").GetComponent<collectible_structure>();
+
         
     }
     private void OnTriggerEnter(Collider other)
@@ -50,8 +55,8 @@ public class enemy_spider : MonoBehaviour
         
 
         transform.parent.localScale = new Vector3(transform.parent.localScale.y, 0, transform.parent.localScale.y);
-        SoundmanagerM.Playsound(SoundmanagerM.Sound.spiderdeath);
-        
+        audioManager.PlaySound(spawnSoundName);
+
 
         yield return new WaitForSeconds(spiderKillEjecution);
 

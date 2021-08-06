@@ -33,12 +33,17 @@ public class character_basic_move : MonoBehaviour
     private             changecaracter          frizz;
 
     public status_changer status;
+
+    AudioManager audioManager; 
+    public string spawnSoundName;
     #endregion
     private void Awake()
     {
         changecharacte = GameObject.FindWithTag("change_character_system");
 
         frizz = changecharacte.GetComponent<changecaracter>();
+
+        audioManager = AudioManager.instance;
 
     }
 
@@ -87,7 +92,7 @@ public class character_basic_move : MonoBehaviour
 
         if (Input.GetButtonDown(jumpButtonName) && feet.grounded)
         {
-            SoundmanagerM.Playsound(SoundmanagerM.Sound.jump);
+            audioManager.PlaySound(spawnSoundName);
             myRigidBody.AddForce(Vector3.up * jumpForce, jumpForceMode);
             CreateUpSP();
         }

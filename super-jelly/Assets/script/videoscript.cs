@@ -7,9 +7,13 @@ public class videoscript : MonoBehaviour
 {
     public AudioClip otherClip;
     AudioSource audioSource;
-    
+
+    private AudioManager audioManager; 
+    public string spawnSoundName;
+
     void Start()
     {
+        audioManager = AudioManager.instance;
         audioSource = GetComponent<AudioSource>();
     }
     private void Update()

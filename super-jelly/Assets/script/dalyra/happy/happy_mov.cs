@@ -18,6 +18,9 @@ public class happy_mov : MonoBehaviour
     public          float               vel = 1;
     public          float               Time_to_rotate;
     private         float               counter;
+
+    private AudioManager audioManager; 
+    public string spawnSoundName;
     #endregion
 
     private void OnTriggerEnter(Collider other)
@@ -39,6 +42,7 @@ public class happy_mov : MonoBehaviour
         {
             destination = other.transform.position;
             happy.gameObject.SetActive(true);
+            audioManager.PlaySound(spawnSoundName);
         }
         transform.LookAt(destination);
     }
@@ -50,6 +54,7 @@ public class happy_mov : MonoBehaviour
           
             transform.LookAt(null);
             happy.gameObject.SetActive(false);
+            audioManager.StopSound(spawnSoundName);
         }
     }
 
@@ -79,5 +84,10 @@ public class happy_mov : MonoBehaviour
             }
         }
 
+    }
+
+    private void Start()
+    {
+        audioManager = AudioManager.instance;
     }
 }
