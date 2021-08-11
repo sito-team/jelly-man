@@ -201,8 +201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48007f48766a06d45a397f90a0a9c318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball_character: {fileID: 0}
+  transformation: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
+  regenerationTime: 3
 --- !u!1 &15385296060270916
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +426,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.07075471, b: 0.07075471, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

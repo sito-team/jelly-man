@@ -48558,7 +48558,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5978261, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -48644,7 +48644,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992200044}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8c488903f7ca27848a25d67d5f6fe889, type: 3}
@@ -52433,7 +52433,7 @@ PrefabInstance:
     - target: {fileID: 422339198242618760, guid: d0b66d85343a3a842b340e839e7251a9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -18.999939
+      value: -19
       objectReference: {fileID: 0}
     - target: {fileID: 610523457141217765, guid: d0b66d85343a3a842b340e839e7251a9,
         type: 3}
@@ -52603,7 +52603,7 @@ PrefabInstance:
     - target: {fileID: 6245496045853942951, guid: d0b66d85343a3a842b340e839e7251a9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 41.002346
+      value: 41.00235
       objectReference: {fileID: 0}
     - target: {fileID: 6335614350934472411, guid: d0b66d85343a3a842b340e839e7251a9,
         type: 3}

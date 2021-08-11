@@ -48,6 +48,7 @@ public class character_basic_move : MonoBehaviour
     }
 
 
+
     public void Update()
     {
 
