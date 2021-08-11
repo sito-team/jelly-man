@@ -337,6 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6916200859524000568}
   - component: {fileID: -4981254552643075392}
+  - component: {fileID: 4599217819794045833}
   m_Layer: 0
   m_Name: Misil
   m_TagString: Untagged
@@ -371,10 +372,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b127a1c5249ce2543b5f92c935ef1c72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeDistance: 5
+  damageTaken: 1
   lifeless: {fileID: 0}
-  espisable: 0
-  movementSpeed: 22
+  damageType: 1
+  invuneabilitytime: 6
+  movementSpeed: 15
+--- !u!65 &4599217819794045833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916200859524000575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.057365, y: 9.259834, z: 25.711174}
+  m_Center: {x: -0.44168472, y: 0.62820435, z: 0.9111595}
 --- !u!1 &6916200859565353904
 GameObject:
   m_ObjectHideFlags: 0
